@@ -1,0 +1,34 @@
+{
+  "extends": ["react-app", "plugin:jest/recommended", "prettier", "prettier/react"],
+  "plugins": ["simple-import-sort", "jest", "react"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "react/jsx-curly-spacing": "off",
+    "no-negated-condition": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-no-bind": 2,
+    "react/no-string-refs": "off",
+    "class-methods-use-this": "off",
+    "import/no-named-as-default": "off",
+    "simple-import-sort/sort": "error",
+    "newline-after-var": "off",
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": ["const", "let", "var"], "next": "*" },
+      { "blankLine": "any", "prev": ["const", "let", "var"], "next": ["const", "let", "var"] }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["*.spec.tsx", "*.test.tsx", "*.spec.ts", "*.test.ts"],
+      "rules": {
+        "no-magic-numbers": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-no-bind": "off",
+        "react/no-string-refs": "off",
+        "class-methods-use-this": "off",
+        "import/no-named-as-default": "off"
+      }
+    }
+  ]
+}
