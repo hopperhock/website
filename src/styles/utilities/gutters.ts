@@ -1,41 +1,47 @@
-export const SPACING_0: string = '0rem';
-export const SPACING_1: string = '0.5rem';
-export const SPACING_2: string = '1rem';
-export const SPACING_3: string = '1.5rem';
-export const SPACING_4: string = '2rem';
-export const SPACING_5: string = '2.5rem';
-export const SPACING_6: string = '3rem';
-export const SPACING_7: string = '3.5rem';
-export const SPACING_8: string = '4rem';
-export const SPACING_9: string = '4.5rem';
-export const SPACING_10: string = '5rem';
-export const SPACING_11: string = '5.5rem';
-export const SPACING_32: string = '6rem';
-export const SPACING_37: string = '6.5rem';
+export enum SPACING {
+  's0' = '0rem',
+  's1' = '0.5rem',
+  's2' = '1rem',
+  's3' = '1.5rem',
+  's4' = '2rem',
+  's5' = '2.5rem',
+  's6' = '3rem',
+  's7' = '3.5rem',
+  's8' = '4rem',
+  's9' = '4.5rem',
+  's10' = '5rem',
+  's11' = '5.5rem',
+  's12' = '6rem',
+  's13' = '6.5rem'
+}
 
-export const PADDING_0: string = '0rem';
-export const PADDING_1: string = '0.313rem';
-export const PADDING_2: string = '0.625rem';
-export const PADDING_3: string = '0.938rem';
-export const PADDING_4: string = '1.25rem';
-export const PADDING_5: string = '1.563rem';
-export const PADDING_6: string = '1.875rem';
-export const PADDING_7: string = '2.188rem';
-export const PADDING_8: string = '2.5rem';
-export const PADDING_9: string = '2.813rem';
-export const PADDING_10: string = '3.125rem';
+export enum PADDING {
+  'p0' = '0rem',
+  'p1' = '0.313rem',
+  'p2' = '0.625rem',
+  'p3' = '0.938rem',
+  'p4' = '1.25rem',
+  'p5' = '1.563rem',
+  'p6' = '1.875rem',
+  'p7' = '2.188rem',
+  'p8' = '2.5rem',
+  'p9' = '2.813rem',
+  'p10' = '3.125rem'
+}
 
-export const MARGING_0: string = '0rem';
-export const MARGING_1: string = '0.5rem';
-export const MARGING_2: string = '1rem';
-export const MARGING_3: string = '1.5rem';
-export const MARGING_4: string = '2rem';
-export const MARGING_5: string = '2.5rem';
-export const MARGING_6: string = '3rem';
-export const MARGING_7: string = '3.5rem';
-export const MARGING_8: string = '4rem';
-export const MARGING_9: string = '4.5rem';
-export const MARGING_10: string = '5rem';
-export const MARGING_11: string = '5.5rem';
-export const MARGING_12: string = '6rem';
-export const MARGING_13: string = '6.5rem';
+export enum MARGIN {
+  'm0' = '0rem',
+  'm1' = '0.5rem',
+  'm2' = '1rem',
+  'm3' = '1.5rem',
+  'm4' = '2rem',
+  'm5' = '2.5rem',
+  'm6' = '3rem',
+  'm7' = '3.5rem',
+  'm8' = '4rem',
+  'm9' = '4.5rem',
+  'm10' = '5rem',
+  'm11' = '5.5rem',
+  'm12' = '6rem',
+  'm13' = '6.5rem'
+}
