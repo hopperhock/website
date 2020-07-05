@@ -6,7 +6,7 @@ const Navbar: SFC = () => {
 };
 
 const Nav = styled.div`
-  background-color: ${({ theme }) => theme.PRIMARY_COLOR_D1};
+  background-color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
   color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   height: 20%;
   padding: 0 0.5rem;
