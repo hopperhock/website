@@ -1,41 +1,47 @@
-export const SPACING_0: string = '0rem';
-export const SPACING_1: string = '0.5rem';
-export const SPACING_2: string = '1rem';
-export const SPACING_3: string = '1.5rem';
-export const SPACING_4: string = '2rem';
-export const SPACING_5: string = '2.5rem';
-export const SPACING_6: string = '3rem';
-export const SPACING_7: string = '3.5rem';
-export const SPACING_8: string = '4rem';
-export const SPACING_9: string = '4.5rem';
-export const SPACING_10: string = '5rem';
-export const SPACING_11: string = '5.5rem';
-export const SPACING_32: string = '6rem';
-export const SPACING_37: string = '6.5rem';
+export enum Spacing {
+  'SIZE_0' = '0rem',
+  'SIZE_1' = '0.5rem',
+  'SIZE_2' = '1rem',
+  'SIZE_3' = '1.5rem',
+  'SIZE_4' = '2rem',
+  'SIZE_5' = '2.5rem',
+  'SIZE_6' = '3rem',
+  'SIZE_7' = '3.5rem',
+  'SIZE_8' = '4rem',
+  'SIZE_9' = '4.5rem',
+  'SIZE_10' = '5rem',
+  'SIZE_11' = '5.5rem',
+  'SIZE_12' = '6rem',
+  'SIZE_13' = '6.5rem'
+}
 
-export const PADDING_0: string = '0rem';
-export const PADDING_1: string = '0.313rem';
-export const PADDING_2: string = '0.625rem';
-export const PADDING_3: string = '0.938rem';
-export const PADDING_4: string = '1.25rem';
-export const PADDING_5: string = '1.563rem';
-export const PADDING_6: string = '1.875rem';
-export const PADDING_7: string = '2.188rem';
-export const PADDING_8: string = '2.5rem';
-export const PADDING_9: string = '2.813rem';
-export const PADDING_10: string = '3.125rem';
+export enum Padding {
+  'SIZE_0' = '0rem',
+  'SIZE_1' = '0.313rem',
+  'SIZE_2' = '0.625rem',
+  'SIZE_3' = '0.938rem',
+  'SIZE_4' = '1.25rem',
+  'SIZE_5' = '1.563rem',
+  'SIZE_6' = '1.875rem',
+  'SIZE_7' = '2.188rem',
+  'SIZE_8' = '2.5rem',
+  'SIZE_9' = '2.813rem',
+  'SIZE_10' = '3.125rem'
+}
 
-export const MARGING_0: string = '0rem';
-export const MARGING_1: string = '0.5rem';
-export const MARGING_2: string = '1rem';
-export const MARGING_3: string = '1.5rem';
-export const MARGING_4: string = '2rem';
-export const MARGING_5: string = '2.5rem';
-export const MARGING_6: string = '3rem';
-export const MARGING_7: string = '3.5rem';
-export const MARGING_8: string = '4rem';
-export const MARGING_9: string = '4.5rem';
-export const MARGING_10: string = '5rem';
-export const MARGING_11: string = '5.5rem';
-export const MARGING_12: string = '6rem';
-export const MARGING_13: string = '6.5rem';
+export enum Margin {
+  'SIZE_0' = '0rem',
+  'SIZE_1' = '0.5rem',
+  'SIZE_2' = '1rem',
+  'SIZE_3' = '1.5rem',
+  'SIZE_4' = '2rem',
+  'SIZE_5' = '2.5rem',
+  'SIZE_6' = '3rem',
+  'SIZE_7' = '3.5rem',
+  'SIZE_8' = '4rem',
+  'SIZE_9' = '4.5rem',
+  'SIZE_10' = '5rem',
+  'SIZE_11' = '5.5rem',
+  'SIZE_12' = '6rem',
+  'SIZE_13' = '6.5rem'
+}

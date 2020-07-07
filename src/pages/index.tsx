@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.SECONDARY_COLOR_1};
+  background-color: ${(props) => props.theme.SECONDARY_COLOR_DARK_1};
   height: 100%;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

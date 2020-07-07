@@ -2,11 +2,12 @@ import React, { SFC } from 'react';
 import styled from 'styled-components';
 
 const Navbar: SFC = () => {
-  return <Nav>Foo</Nav>;
+  return <Nav>Navbar</Nav>;
 };
 
 const Nav = styled.div`
-  background-color: ${(props) => props.theme.PRIMARY_COLOR_1};
+  background-color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
+  color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   height: 20%;
   padding: 0 0.5rem;
   display: flex;
