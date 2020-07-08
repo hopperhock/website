@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app';
 import { SFC } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import Navbar from 'shared/components/Navbar';
 import { DARK_THEME } from 'styles/theme';
 
