@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Container = styled.div`
-  background-image: url('https://images2.alphacoders.com/106/1063352.jpg');
-  background-repeat: no-repeat;
   height: 200vh;
   display: flex;
   flex-direction: column;

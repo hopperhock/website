@@ -1,20 +1,14 @@
 import { AppProps } from 'next/app';
 import { SFC } from 'react';
-import styled, { ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import Navbar from 'shared/components/Navbar';
 import { DARK_THEME } from 'styles/theme';
-
-const Container = styled.div`
-  background: linear-gradient(#e66465, #9198e5);
-`;
 
 const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={DARK_THEME}>
-      <Container>
-        <Navbar />
-        <Component {...pageProps} />
-      </Container>
+      <Navbar />
+      <Component {...pageProps} />
       <style jsx global>{`
         html,
         body {
