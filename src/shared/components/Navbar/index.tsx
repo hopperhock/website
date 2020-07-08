@@ -1,6 +1,5 @@
 import React, { SFC, useState, useEffect } from 'react';
-import { Nav } from './navbar.styles';
-import HopperhockLogo from 'styles/illustrations/hopperhock-logo.svg';
+import { Nav, Brand, NavLink, NavLinks, NavAction } from './navbar.styles';
 import Link from 'next/link';
 
 const Navbar: SFC = () => {
@@ -13,22 +12,22 @@ const Navbar: SFC = () => {
   }, []);
   return (
     <Nav transparent={isTransparent} aria-transparent={isTransparent}>
-      <HopperhockLogo className="brand" />
-      <div className="nav-links">
+      <Brand transparent={isTransparent} />
+      <NavLinks>
         <Link href="/about-us">
-          <a className="nav-link">Home</a>
+          <NavLink transparent={isTransparent}>Home</NavLink>
         </Link>
         <Link href="/about-us">
-          <a className="nav-link">Services</a>
+          <NavLink transparent={isTransparent}>Services</NavLink>
         </Link>
         <Link href="/about-us">
-          <a className="nav-link">About Us</a>
+          <NavLink transparent={isTransparent}>About Us</NavLink>
         </Link>
         <Link href="/about-us">
-          <a className="nav-link">Contact Us</a>
+          <NavLink transparent={isTransparent}>Contact Us</NavLink>
         </Link>
-      </div>
-      <button className="nav-action">BOOK A CALL</button>
+      </NavLinks>
+      <NavAction transparent={isTransparent}>BOOK A CALL</NavAction>
     </Nav>
   );
 };
