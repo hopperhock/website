@@ -1,15 +1,19 @@
-import React, { SFC, useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import { Nav, Brand, NavLink, NavLinks, NavAction } from './navbar.styles';
 import Link from 'next/link';
 
-const Navbar: SFC = () => {
+const Navbar: FC = () => {
   const [isTransparent, setIsTransparent] = useState(true);
   useEffect(() => {
-    document.addEventListener('scroll', () => {
-      const isScrolled = window.scrollY < 100;
-      setIsTransparent(isScrolled);
-    });
+    document.addEventListener('scroll', setTransparency);
+    return () => {
+      document.removeEventListener('scroll', setTransparency);
+    };
   }, []);
+  function setTransparency() {
+    const isScrolled = window.scrollY < 100;
+    setIsTransparent(isScrolled);
+  }
   return (
     <Nav transparent={isTransparent} aria-transparent={isTransparent}>
       <Brand transparent={isTransparent} />
