@@ -1,11 +1,12 @@
-import { SFC } from 'react';
+import { FC } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
 import Link from 'next/link';
 
 const Container = styled.div`
-  background-color: ${(props) => props.theme.SECONDARY_COLOR_DARK_1};
-  height: 100%;
+  background-image: url('https://images2.alphacoders.com/106/1063352.jpg');
+  background-repeat: no-repeat;
+  height: 200vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +21,7 @@ const Title = styled.h1`
   color: teal;
 `;
 
-const Home: SFC = (props) => {
+const Home: FC = (props) => {
   return (
     <div className="container">
       <Head>
@@ -28,8 +29,6 @@ const Home: SFC = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Title>Hello World</Title>
-        Read{' '}
         <Link href="/about-us">
           <a>this page!</a>
         </Link>
