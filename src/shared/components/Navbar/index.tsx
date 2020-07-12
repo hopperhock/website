@@ -15,7 +15,7 @@ const Navbar: FC = () => {
     setIsTransparent(isScrolled);
   }
   return (
-    <Nav transparent={isTransparent} aria-transparent={isTransparent}>
+    <Nav transparent={isTransparent} data-transparent={isTransparent}>
       <Brand transparent={isTransparent} />
       <NavLinks>
         <Link href="/about-us">
