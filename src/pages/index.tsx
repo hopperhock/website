@@ -1,38 +1,21 @@
-import { FC } from 'react';
-import Head from 'next/head';
-import styled from 'styled-components';
-import Link from 'next/link';
+import { useEffect } from 'react';
+import { NextPageContext } from 'next';
+import Router from 'next/router';
 
-const Container = styled.div`
-  height: 200vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-`;
+const redirectTo = '/home';
 
-const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  color: teal;
-`;
-
-const Home: FC = (props) => {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Container>
-        <Link href="/about-us">
-          <a>this page!</a>
-        </Link>
-      </Container>
-    </div>
-  );
+const RootPage = () => {
+  useEffect(() => {
+    Router.push(redirectTo);
+  });
+  return null;
 };
 
-export default Home;
+RootPage.getInitialProps = (ctx: NextPageContext) => {
+  if (ctx.req && ctx.res) {
+    ctx.res.writeHead(302, { Location: redirectTo });
+    ctx.res.end();
+  }
+};
+
+export default RootPage;
