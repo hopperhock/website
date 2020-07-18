@@ -62,3 +62,8 @@ export enum Yellow {
   LIGHT_2 = '#FCEFC7',
   LIGHT_1 = '#FFFAEB'
 }
+
+export enum Globals {
+  BLACK = '#000000',
+  WHITE = '#FFFFFF'
+}

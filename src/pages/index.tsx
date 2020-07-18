@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Link from 'next/link';
+import ParallaxBanner from '../shared/components/ParallaxBanner';
+import { Images } from '../shared/constants/assetsConstants';
 
 const Container = styled.div`
   height: 200vh;
@@ -16,20 +17,21 @@ const Title = styled.h1`
   line-height: 1.15;
   font-size: 4rem;
   text-align: center;
-  color: teal;
+  color: white;
 `;
 
 const Home: FC = (props) => {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>HopperHock - We guarantee Software Quality</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Link href="/about-us">
-          <a>this page!</a>
-        </Link>
+        <ParallaxBanner
+          bannerContainer={Images.PARALLAX_BANNER_CONTAINER}
+          bannerImage={Images.PARALLAX_BANNER_BACKGROUND}
+        />
       </Container>
     </div>
   );
