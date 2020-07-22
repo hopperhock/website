@@ -1,7 +1,8 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Link from 'next/link';
+import ParallaxBanner from 'shared/components/ParallaxBanner';
+import { Images } from 'shared/constants/assets';
 
 const Container = styled.div`
   height: 200vh;
@@ -9,14 +10,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
-
-const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-  text-align: center;
-  color: teal;
 `;
 
 const Home: FC = (props) => {
@@ -27,9 +20,10 @@ const Home: FC = (props) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>
-        <Link href="/about-us">
-          <a>this page!</a>
-        </Link>
+        <ParallaxBanner
+          bannerContainer={Images.PARALLAX_BANNER_CONTAINER}
+          bannerImage={Images.PARALLAX_BANNER_BACKGROUND}
+        />
       </Container>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Theme } from './types';
-import { Blue, BlueGrey, Teal, Red, Yellow } from '../utilities/colors';
+import { Blue, BlueGrey, Teal, Red, Yellow, Globals } from '../utilities/colors';
 
 export const DARK_THEME: Theme = {
   PRIMARY_COLOR_DARK_1: Blue.DARK_1,
@@ -22,8 +22,8 @@ export const DARK_THEME: Theme = {
   SECONDARY_COLOR_LIGHT_3: BlueGrey.LIGHT_3,
   SECONDARY_COLOR_LIGHT_4: BlueGrey.LIGHT_4,
   SECONDARY_COLOR_LIGHT_5: BlueGrey.LIGHT_5,
-  BLACK: '#000000',
-  WHITE: '#ffffff',
+  BLACK: Globals.BLACK,
+  WHITE: Globals.WHITE,
   SUCCESS: Teal.DARK_3,
   ERROR: Red.DARK_3,
   WARNING: Yellow.DARK_3,
@@ -32,7 +32,7 @@ export const DARK_THEME: Theme = {
   WARNING_LIGHT: Yellow.LIGHT_3,
   MAIN_BACKGROUND: BlueGrey.LIGHT_1,
   HOVER_COLOR: Blue.DARK_2,
-  BTN_PRIMARY: Blue.DARK_3,
+  BTN_PRIMARY: BlueGrey.DARK_1,
   BTN_SECONDARY: BlueGrey.DARK_3,
   BTN_WARNING: Yellow.DARK_3,
   BTN_SUCCESS: Teal.DARK_3,
