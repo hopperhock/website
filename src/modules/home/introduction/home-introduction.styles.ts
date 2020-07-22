@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 import { hexToRGB } from 'styles/utilities/funtions';
 import { Title, Subtitle, TextBody } from 'styles/utilities/font-sizes';
+import { Images } from 'shared/constants/assets';
 
 export const HomeIntroContainer = styled.div`
   height: 100vh;
@@ -14,7 +15,7 @@ export const HomeIntroContainer = styled.div`
   );
   overflow: hidden;
   @media (max-width: ${Breakpoints.mobile}) {
-    background: url('/Images/VideoPoster.png') center center no-repeat;
+    background: url(${Images.HOME_VIDEO_POSTER}) center center no-repeat;
     background-size: cover;
     :before {
       content: '';
@@ -52,12 +53,13 @@ export const HomeIntroDescription = styled.div`
   left: 5%;
   color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   h1 {
-    font-size: ${Subtitle.SIZE_1};
+    font-family: 'Helvetica';
+    font-size: ${Title.SIZE_4};
     font-weight: bold;
     letter-spacing: 10px;
   }
   p {
-    font-size: ${Title.SIZE_2};
+    font-size: ${Title.SIZE_1};
     max-width: 24ch;
   }
   @media (max-width: ${Breakpoints.desktop}) {

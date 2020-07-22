@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
+import HomeIntroduction from 'modules/home/introduction';
 import ParallaxBanner from 'shared/components/ParallaxBanner';
-import HomeIntroduction from './components/HomeIntroduction';
 import { Images } from 'shared/constants/assets';
 
 const Container = styled.div`
@@ -10,7 +10,7 @@ const Container = styled.div`
   display: flex;
 `;
 
-const Home: FC = (props) => {
+const Home: FC = () => {
   return (
     <div className="container">
       <Head>
