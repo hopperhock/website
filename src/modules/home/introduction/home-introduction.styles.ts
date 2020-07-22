@@ -67,7 +67,15 @@ export const HomeIntroDescription = styled.div`
       font-size: ${Subtitle.SIZE_3};
     }
     p {
-      font-size: ${Subtitle.SIZE_1};
+      font-size: ${Title.SIZE_4};
+    }
+  }
+  @media (max-width: ${Breakpoints.tablet}) {
+    h1 {
+      font-size: ${Subtitle.SIZE_4};
+    }
+    p {
+      font-size: ${Title.SIZE_5};
     }
   }
   @media (max-width: ${Breakpoints.mobile}) {
@@ -75,7 +83,7 @@ export const HomeIntroDescription = styled.div`
       font-size: ${TextBody.SIZE_2};
     }
     p {
-      font-size: ${Subtitle.SIZE_3};
+      font-size: ${Subtitle.SIZE_4};
     }
   }
 `;
