@@ -1,18 +1,16 @@
 import { FC } from 'react';
 import Head from 'next/head';
 import styled from 'styled-components';
+import HomeIntroduction from 'modules/home/introduction';
 import ParallaxBanner from 'shared/components/ParallaxBanner';
 import { Images } from 'shared/constants/assets';
 
 const Container = styled.div`
   height: 200vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 `;
 
-const Home: FC = (props) => {
+const Home: FC = () => {
   return (
     <div className="container">
       <Head>
@@ -24,6 +22,7 @@ const Home: FC = (props) => {
           bannerContainer={Images.PARALLAX_BANNER_CONTAINER}
           bannerImage={Images.PARALLAX_BANNER_BACKGROUND}
         />
+        <HomeIntroduction />
       </Container>
     </div>
   );
