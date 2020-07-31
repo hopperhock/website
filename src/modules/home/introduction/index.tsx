@@ -4,7 +4,7 @@ import { Images } from 'shared/constants/assets';
 
 const HomeIntroduction = () => {
   return (
-    <HomeIntroContainer>
+    <HomeIntroContainer className="header">
       <HomeIntroDescription>
         <h1>WE ARE HOPPERHOCK.</h1>
         <p>Custom Software Solutions That Empowers Your Business.</p>

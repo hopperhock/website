@@ -5,7 +5,6 @@ import { Title, Subtitle, TextBody } from 'styles/utilities/font-sizes';
 import { Images } from 'shared/constants/assets';
 
 export const HomeIntroContainer = styled.div`
-  height: 100vh;
   background: ${({ theme }) => hexToRGB(theme.BLACK, '0.6')};
   background: linear-gradient(
     90deg,
@@ -13,6 +12,9 @@ export const HomeIntroContainer = styled.div`
     ${({ theme }) => hexToRGB(theme.BLACK, '0.9')} 45%,
     ${({ theme }) => hexToRGB(theme.BLACK, '0')} 100%
   );
+  scroll-snap-align: start;
+  position: relative;
+  height: 100vh;
   overflow: hidden;
   @media (max-width: ${Breakpoints.mobile}) {
     background: url(${Images.HOME_VIDEO_POSTER}) center center no-repeat;
@@ -31,16 +33,14 @@ export const HomeIntroContainer = styled.div`
 `;
 
 export const HomeIntroVideo = styled.video`
-  position: sticky;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  min-height: 100%;
+  overflow: hidden;
   z-index: -1;
-  @media (min-aspect-ratio: 16/9) {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-aspect-ratio: 16/9) {
-    width: auto;
-    height: 100%;
-  }
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   @media (max-width: ${Breakpoints.mobile}) {
     display: none;
   }
@@ -54,13 +54,13 @@ export const HomeIntroDescription = styled.div`
   color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   h1 {
     font-family: 'Helvetica';
-    font-size: ${Title.SIZE_4};
-    font-weight: bold;
+    font-size: ${Title.SIZE_6};
+    font-weight: 100;
     letter-spacing: 10px;
   }
   p {
     font-size: ${Title.SIZE_1};
-    max-width: 24ch;
+    max-width: 23ch;
   }
   @media (max-width: ${Breakpoints.desktop}) {
     h1 {
