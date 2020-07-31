@@ -4,6 +4,7 @@ import { Title } from 'styles/utilities/font-sizes';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
 const baseParallaxBannerStyles = css`
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -23,6 +24,12 @@ const baseParallaxTextDisplayer = css`
   }
 `;
 
+export const Container = styled.div`
+  position: relative;
+  display: inline-block;
+  scroll-snap-align: start;
+`;
+
 export const ParallaxBannerImage = styled.div<{ bannerImageSource: string }>`
 ${baseParallaxBannerStyles}
   background-attachment: fixed;
@@ -37,7 +44,6 @@ export const ParallaxContainer = styled.div<{ bannerContainerSource: string }>`
 ${baseParallaxBannerStyles}
   background-image: url(${({ bannerContainerSource }) => bannerContainerSource});
   height: 720px;
-  margin-top: -${Margin.SIZE_5};
   display: flex;
   flex-direction: column;
   align-items: center;

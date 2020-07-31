@@ -19,6 +19,16 @@ export type Theme = {
   SECONDARY_COLOR_LIGHT_3: string;
   SECONDARY_COLOR_LIGHT_4: string;
   SECONDARY_COLOR_LIGHT_5: string;
+  TERTIARY_COLOR_DARK_1: string;
+  TERTIARY_COLOR_DARK_2: string;
+  TERTIARY_COLOR_DARK_3: string;
+  TERTIARY_COLOR_DARK_4: string;
+  TERTIARY_COLOR_DARK_5: string;
+  TERTIARY_COLOR_LIGHT_1: string;
+  TERTIARY_COLOR_LIGHT_2: string;
+  TERTIARY_COLOR_LIGHT_3: string;
+  TERTIARY_COLOR_LIGHT_4: string;
+  TERTIARY_COLOR_LIGHT_5: string;
   BLACK: string;
   WHITE: string;
   SUCCESS: string;

@@ -1,9 +1,10 @@
 export enum Title {
-  SIZE_1 = '3rem',
-  SIZE_2 = '2.75rem',
-  SIZE_3 = '2.5rem',
-  SIZE_4 = '2.25rem',
-  SIZE_5 = '2rem'
+  SIZE_1 = '3.25rem',
+  SIZE_2 = '3.25rem',
+  SIZE_3 = '2.75rem',
+  SIZE_4 = '2.5rem',
+  SIZE_5 = '2.25rem',
+  SIZE_6 = '2rem'
 }
 
 export enum Subtitle {

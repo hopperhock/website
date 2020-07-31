@@ -15,7 +15,7 @@ export const Nav = styled.div<{ transparent: boolean }>`
   display: flex;
   align-items: center;
   padding: 0 ${Spacing.SIZE_13};
-  z-index: 2;
+  z-index: 1000;
   &[data-transparent='false'] {
     animation: ${({ theme }) => backgroundFadeIn(theme.WHITE)} 0.35s ease-in-out 0s 1;
     background-color: ${({ theme }) => theme.WHITE};
@@ -80,17 +80,19 @@ export const NavAction = styled.div<{ transparent: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${({ theme, transparent }) => hexToRGB(theme.SUCCESS, transparent ? '1' : '0.5')};
+  border: 1px solid
+    ${({ theme, transparent }) => (transparent ? hexToRGB(theme.TERTIARY_COLOR_LIGHT_3, '1') : theme.BLACK)};
   outline: inherit;
-  color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.TEXT_COLOR)};
+  color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.WHITE)};
+  background-color: ${({ theme, transparent }) => (transparent ? 'inherit' : theme.BLACK)};
   font-size: ${TextBody.SIZE_4};
   font-weight: ${FontWeight.medium};
-  letter-spacing: 2px;
   margin-left: auto;
-  padding: ${Padding.SIZE_3} ${Padding.SIZE_4};
+  padding: ${Padding.SIZE_3} ${Padding.SIZE_8};
   cursor: pointer;
   :hover {
-    background-color: ${({ theme }) => hexToRGB(theme.SUCCESS, '0.1')};
+    background-color: ${({ theme, transparent }) => (transparent ? hexToRGB(theme.SUCCESS, '0.1') : theme.WHITE)};
+    color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.BLACK)};
   }
   @media (max-width: ${Breakpoints.desktop}) {
     font-size: ${TextBody.SIZE_5};
