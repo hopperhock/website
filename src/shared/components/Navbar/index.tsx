@@ -4,22 +4,16 @@ import Link from 'next/link';
 
 const Navbar: FC = () => {
   const [isTransparent, setIsTransparent] = useState(true);
-
   useEffect(() => {
-    const callback = (entries: any) => {
-      entries.forEach((entry: any) => {
-        if (entry.intersectionRatio > 0) {
-          let isTheHeader = !entry.isIntersecting && entry.target.previousSibling.className.includes('header');
-          setIsTransparent(isTheHeader);
-        }
-      });
+    document.addEventListener('scroll', setTransparency);
+    return () => {
+      document.removeEventListener('scroll', setTransparency);
     };
-    const observer = new IntersectionObserver(callback, {
-      threshold: 0.2
-    });
-    document.querySelectorAll('.snapping').forEach((elem) => observer.observe(elem));
-    return () => {};
   }, []);
+  function setTransparency() {
+    const isScrolled = window.scrollY < 100;
+    setIsTransparent(isScrolled);
+  }
 
   return (
     <Nav transparent={isTransparent} data-transparent={isTransparent}>
