@@ -10,7 +10,7 @@ export const Nav = styled.div<{ transparent: boolean }>`
   position: fixed;
   background-color: ${({ theme }) => hexToRGB(theme.WHITE, '0')};
   color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
-  height: 5.5rem;
+  height: 6rem;
   width: 100%;
   display: flex;
   align-items: center;
@@ -31,9 +31,9 @@ export const Nav = styled.div<{ transparent: boolean }>`
 `;
 
 export const Brand = styled(HopperhockLogo)`
-  height: 95%;
+  height: 7.5rem;
   padding: ${Padding.SIZE_1};
-  margin-top: ${Margin.SIZE_1};
+  margin-top: ${Margin.SIZE_2};
   path {
     fill: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.TEXT_COLOR)};
   }
@@ -59,12 +59,12 @@ export const NavLink = styled.div<{ transparent: boolean }>`
   padding: 0 ${Padding.SIZE_7};
   font-size: ${TextBody.SIZE_2};
   color: ${({ theme, transparent }) => (transparent ? theme.SECONDARY_COLOR_LIGHT_1 : theme.SECONDARY_COLOR_DARK_1)};
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-decoration: none;
   cursor: pointer;
   :hover {
     opacity: 0.9;
-    border-top: 1px solid
+    border-top: 0.0625rem solid
       ${({ theme, transparent }) => (transparent ? theme.SECONDARY_COLOR_LIGHT_1 : theme.PRIMARY_COLOR_DARK_3)};
   }
   @media (max-width: ${Breakpoints.desktop}) {
@@ -80,7 +80,7 @@ export const NavAction = styled.div<{ transparent: boolean }>`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid
+  border: 0.0625rem solid
     ${({ theme, transparent }) => (transparent ? hexToRGB(theme.TERTIARY_COLOR_LIGHT_3, '1') : theme.BLACK)};
   outline: inherit;
   color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.WHITE)};
@@ -100,6 +100,6 @@ export const NavAction = styled.div<{ transparent: boolean }>`
   }
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: ${TextBody.SIZE_5};
-    letter-spacing: 1px;
+    letter-spacing: 0.0625rem;
   }
 `;

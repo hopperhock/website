@@ -1,7 +1,7 @@
 import { Theme } from './types';
 import { Blue, BlueGrey, Teal, Red, Yellow, Globals } from '../utilities/colors';
 
-export const DARK_THEME: Theme = {
+export const THEME: Theme = {
   PRIMARY_COLOR_DARK_1: Blue.DARK_1,
   PRIMARY_COLOR_DARK_2: Blue.DARK_2,
   PRIMARY_COLOR_DARK_3: Blue.DARK_3,

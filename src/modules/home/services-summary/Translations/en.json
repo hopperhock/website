@@ -1,4 +1,10 @@
 {
   "home.services.title": "services we provide",
-  "home.services.subtitle": "how can we help you ?"
+  "home.services.subtitle": "how can we help you ?",
+  "home.services.develop.title": "Software Development",
+  "home.services.qa.title": "Quality Assurance",
+  "home.services.ux.title": "UX/UI",
+  "home.services.develop.description": "We help you to empower your business transforming your ideas into opportunities.",
+  "home.services.qa.description": "Improve your project with the best practices.",
+  "home.services.ux.description": "Revive your company goals. We concrete your ideas with successful designs."
 }

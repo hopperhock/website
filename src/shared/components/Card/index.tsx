@@ -1,21 +1,15 @@
 import React, { FC } from 'react';
-import { Globals } from 'styles/utilities/colors';
-import { CardContainer, Image, ChangeColorContainer, ServiceTitle } from './card.styles';
+import { CardContainer, Image, ChangeColorContainer } from './styles';
 
 type ICardProps = {
   image: string;
-  title: string;
-  description: string;
-  buttons: boolean;
+  children?: React.ReactFragment;
 };
 
-const Card: FC<ICardProps> = ({ image, title, description, buttons = false }) => {
+const Card: FC<ICardProps> = ({ image, children }) => {
   return (
-    <CardContainer className="animate__fadeInDown">
-      <ChangeColorContainer>
-        {' '}
-        <ServiceTitle>{title}</ServiceTitle>{' '}
-      </ChangeColorContainer>
+    <CardContainer>
+      <ChangeColorContainer>{children}</ChangeColorContainer>
       <Image cardImage={image}></Image>
     </CardContainer>
   );

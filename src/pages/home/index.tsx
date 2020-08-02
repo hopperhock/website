@@ -17,7 +17,7 @@ const Home: FC = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>HopperHock - Improve, Grown & Innovate</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Container>

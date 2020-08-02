@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 import { hexToRGB } from 'styles/utilities/funtions';
 import { Title, Subtitle, TextBody } from 'styles/utilities/font-sizes';
+import { Margin } from 'styles/utilities/gutters';
 import { Images } from 'shared/constants/assets';
 
 export const HomeIntroContainer = styled.div`
@@ -12,7 +13,6 @@ export const HomeIntroContainer = styled.div`
     ${({ theme }) => hexToRGB(theme.BLACK, '0.9')} 45%,
     ${({ theme }) => hexToRGB(theme.BLACK, '0')} 100%
   );
-  scroll-snap-align: start;
   position: relative;
   height: 100vh;
   overflow: hidden;
@@ -56,7 +56,7 @@ export const HomeIntroDescription = styled.div`
     font-family: 'Helvetica';
     font-size: ${Title.SIZE_6};
     font-weight: 100;
-    letter-spacing: 10px;
+    letter-spacing: 0.625rem;
   }
   p {
     font-size: ${Title.SIZE_1};

@@ -116,7 +116,6 @@ body, html {
   margin: ${Margin.SIZE_0};;
   font-family: "Roboto";
   height: 100vh;
-  scroll-snap-type: y mandatory;
 }
 * {
   box-sizing: border-box;
