@@ -17,8 +17,7 @@ type IParallaxBannerProps = {
 };
 
 const ParallaxBanner: FC<IParallaxBannerProps> = ({ bannerImage, bannerContainer }) => {
-  const redirectToContactUs = useCallback(() => Router.push(`/about-us`), []);
-
+  const BUTTON_WIDTH = '30%';
   return (
     <Container>
       <ParallaxBannerImage bannerImageSource={bannerImage}>
@@ -29,7 +28,7 @@ const ParallaxBanner: FC<IParallaxBannerProps> = ({ bannerImage, bannerContainer
             {translations['home.banner.label.description']}
             <ParallaxBoldTextDisplayer>{translations['home.banner.bold.label']}</ParallaxBoldTextDisplayer>
           </ParallaxTextDisplayer>
-          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction={redirectToContactUs} width="30%">
+          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction="about-us" width={BUTTON_WIDTH}>
             {translations['home.banner.button.label']}
           </Button>
         </ParallaxContainer>

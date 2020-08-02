@@ -2,6 +2,7 @@ import React, { FC } from 'react';
 import { Globals } from 'styles/utilities/colors';
 import { GenericButton } from './button.styles';
 import { TextBody } from 'styles/utilities/font-sizes';
+import { redirectToGenericRoute } from 'shared/utils/utils';
 
 type IButtonProps = {
   color: string;
@@ -9,7 +10,7 @@ type IButtonProps = {
   children: React.ReactNode;
   isOutline?: boolean;
   defaultMargin?: boolean;
-  redirectAction(): void;
+  redirectAction: string;
   width?: string;
   fontSize?: string;
 };
@@ -30,7 +31,7 @@ const Button: FC<IButtonProps> = ({
       isOutline={isOutline}
       textColor={textColor}
       fontSize={fontSize}
-      onClick={redirectAction}
+      onClick={() => redirectToGenericRoute(redirectAction)}
     >
       {children}
     </GenericButton>

@@ -15,8 +15,9 @@ type ServiceCardProps = {
 };
 
 const ServiceCard: FC<ServiceCardProps> = ({ serviceTitle, description, image }) => {
-  const redirectToContactUs = useCallback(() => Router.push(`/about-us`), []);
-
+  const BUTTON_WIDTH = '40%';
+  const SERVICES_ROUTE = 'services';
+  const CONTACT_ROUTE = 'contact-us';
   return (
     <Containers>
       <Card image={image}>
@@ -27,21 +28,21 @@ const ServiceCard: FC<ServiceCardProps> = ({ serviceTitle, description, image })
           <Button
             color={BlueGrey.DARK_1}
             textColor={Globals.WHITE}
-            redirectAction={redirectToContactUs}
-            width="40%"
+            redirectAction={SERVICES_ROUTE}
+            width={BUTTON_WIDTH}
             fontSize={TextBody.SIZE_4}
           >
-            {translations['home.services.button.title']}
+            {translations['home.services.button.services']}
           </Button>
           <Button
             color={THEME.TERTIARY_COLOR_LIGHT_5}
             textColor={THEME.WHITE}
             isOutline
-            redirectAction={redirectToContactUs}
-            width="40%"
+            redirectAction={CONTACT_ROUTE}
+            width={BUTTON_WIDTH}
             fontSize={TextBody.SIZE_4}
           >
-            {translations['home.services.button.title2']}
+            {translations['home.services.button.contact']}
           </Button>
         </ButtonContainer>
       </Card>
