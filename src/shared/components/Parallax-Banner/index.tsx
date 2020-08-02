@@ -8,7 +8,7 @@ import {
   ParallaxTextDisplayer,
   ParallaxBoldTextDisplayer,
   Container
-} from './index.styles';
+} from './styles';
 import * as translations from './Translations/en.json';
 
 type IParallaxBannerProps = {
@@ -20,14 +20,16 @@ const ParallaxBanner: FC<IParallaxBannerProps> = ({ bannerImage, bannerContainer
   const redirectToContactUs = useCallback(() => Router.push(`/about-us`), []);
 
   return (
-    <Container className="sectionqw">
+    <Container>
       <ParallaxBannerImage bannerImageSource={bannerImage}>
         <ParallaxContainer bannerContainerSource={bannerContainer}>
           <ParallaxTextDisplayer>
-            {translations['home.banner.label']}
+            {translations['home.banner.label.title']}
+            <br></br>
+            {translations['home.banner.label.description']}
             <ParallaxBoldTextDisplayer>{translations['home.banner.bold.label']}</ParallaxBoldTextDisplayer>
           </ParallaxTextDisplayer>
-          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction={redirectToContactUs}>
+          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction={redirectToContactUs} width="30%">
             {translations['home.banner.button.label']}
           </Button>
         </ParallaxContainer>

@@ -67,3 +67,7 @@ export enum Globals {
   BLACK = '#000000',
   WHITE = '#FFFFFF'
 }
+
+export enum Alternatives {
+  LIGHT_SLATE_GREY = '#778899'
+}

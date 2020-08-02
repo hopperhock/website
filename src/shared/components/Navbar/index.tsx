@@ -6,7 +6,7 @@ const Navbar: FC = () => {
   const [isTransparent, setIsTransparent] = useState(true);
 
   useEffect(() => {
-    const callback = (entries: any, observer: any) => {
+    const callback = (entries: any) => {
       entries.forEach((entry: any) => {
         if (entry.intersectionRatio > 0) {
           let isTheHeader = !entry.isIntersecting && entry.target.previousSibling.className.includes('header');
@@ -14,13 +14,10 @@ const Navbar: FC = () => {
         }
       });
     };
-
     const observer = new IntersectionObserver(callback, {
       threshold: 0.2
     });
-
-    document.querySelectorAll('.sectionqw').forEach((elem) => observer.observe(elem));
-
+    document.querySelectorAll('.snapping').forEach((elem) => observer.observe(elem));
     return () => {};
   }, []);
 
