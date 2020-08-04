@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import NavContainer from './styles';
+import Container from './styles';
 
 type Props = {
   visible: boolean;
@@ -7,7 +7,7 @@ type Props = {
 };
 
 const Backdrop: FC<Props> = ({ visible, onToggle }) => {
-  return <NavContainer visible={visible} onClick={onToggle} />;
+  return <Container visible={visible} onClick={onToggle} />;
 };
 
 export default Backdrop;
