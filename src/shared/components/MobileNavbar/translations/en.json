@@ -1,0 +1,12 @@
+{
+  "links": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "footer": {
+    "description": "Are you interested in having a conversation with us?",
+    "link": "Book a call"
+  }
+}
