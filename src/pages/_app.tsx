@@ -1,8 +1,8 @@
 import { AppProps } from 'next/app';
 import { SFC, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Navbar from 'shared/components/Navbar';
 import { THEME } from 'styles/theme';
+import Header from 'shared/components/Header';
 import { GlobalStyles } from 'styles/global-style';
 
 const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
@@ -13,7 +13,7 @@ const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={THEME}>
       <GlobalStyles />
-      <Navbar />
+      <Header />
       <Component {...pageProps} />
     </ThemeProvider>
   );

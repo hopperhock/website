@@ -1,39 +1,28 @@
-import React, { useState, useEffect, FC } from 'react';
-import { Nav, Brand, NavLink, NavLinks, NavAction } from './navbar.styles';
+import React, { FC } from 'react';
+import { NavLink, NavLinks } from './styles';
 import Link from 'next/link';
+import * as translations from './translations/en.json';
 
-const Navbar: FC = () => {
-  const [isTransparent, setIsTransparent] = useState(true);
-  useEffect(() => {
-    document.addEventListener('scroll', setTransparency);
-    return () => {
-      document.removeEventListener('scroll', setTransparency);
-    };
-  }, []);
-  function setTransparency() {
-    const isScrolled = window.scrollY < 100;
-    setIsTransparent(isScrolled);
-  }
+type Props = {
+  transparent: boolean;
+};
 
+const Navbar: FC<Props> = ({ transparent }) => {
   return (
-    <Nav transparent={isTransparent} data-transparent={isTransparent}>
-      <Brand transparent={isTransparent} />
-      <NavLinks>
-        <Link href="/about-us">
-          <NavLink transparent={isTransparent}>Home</NavLink>
-        </Link>
-        <Link href="/about-us">
-          <NavLink transparent={isTransparent}>Services</NavLink>
-        </Link>
-        <Link href="/about-us">
-          <NavLink transparent={isTransparent}>About Us</NavLink>
-        </Link>
-        <Link href="/about-us">
-          <NavLink transparent={isTransparent}>Contact Us</NavLink>
-        </Link>
-      </NavLinks>
-      <NavAction transparent={isTransparent}>BOOK A CALL</NavAction>
-    </Nav>
+    <NavLinks>
+      <Link href="/home">
+        <NavLink transparent={transparent}>{translations['main-nav.home']}</NavLink>
+      </Link>
+      <Link href="/services">
+        <NavLink transparent={transparent}>{translations['main-nav.services']}</NavLink>
+      </Link>
+      <Link href="/about-us">
+        <NavLink transparent={transparent}>{translations['main-nav.about-us']}</NavLink>
+      </Link>
+      <Link href="/contact-us">
+        <NavLink transparent={transparent}>{translations['main-nav.contact-us']}</NavLink>
+      </Link>
+    </NavLinks>
   );
 };
 
