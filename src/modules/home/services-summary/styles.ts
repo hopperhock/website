@@ -4,14 +4,17 @@ import { Title } from 'styles/utilities/font-sizes';
 import { Margin } from 'styles/utilities/gutters';
 import Button from 'shared/components/Button';
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { Images } from 'shared/constants/assets';
+import ServiceCard from './components/service-card';
 
 export const Container = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: ${({ theme }) =>
-    `linear-gradient(90deg, ${theme.SECONDARY_COLOR_DARK_1} 38%, ${theme.SECONDARY_COLOR_DARK_2} 64%, ${theme.TERTIARY_COLOR_DARK_1} 100%)`};
+  background: url(${Images.SERVICE_IMAGE_CONTAINER});
+  background-size: cover;
+  background-position: center bottom;
 `;
 
 export const ServicesContainer = styled.div`
@@ -20,6 +23,7 @@ export const ServicesContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10em;
 `;
 
 const baseTittles = css`
@@ -30,9 +34,9 @@ const baseTittles = css`
 
 export const HeaderTitle = styled.p`
   ${baseTittles}
-  font-size: ${Subtitle.SIZE_3};
+  font-size: ${Subtitle.SIZE_2};
   color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_3};
-  margin-top: 11rem;
+  margin-top: 6em;
   @media (max-width: ${Breakpoints.mobile}) {
     font-size: ${Subtitle.SIZE_4};
   }
@@ -40,7 +44,7 @@ export const HeaderTitle = styled.p`
 
 export const HeaderSubtitle = styled.p`
   ${baseTittles}
-  font-size: ${Title.SIZE_6};
+  font-size: ${Title.SIZE_5};
   color: ${({ theme }) => theme.WHITE};
   margin: ${Margin.SIZE_1}  ${Margin.SIZE_0} ${Margin.SIZE_7} ${Margin.SIZE_0} ;
   @media (max-width: ${Breakpoints.mobile}) {

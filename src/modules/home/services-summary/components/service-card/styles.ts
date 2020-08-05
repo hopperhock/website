@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { Margin } from 'styles/utilities/gutters';
 import { ChangeColorContainer } from 'shared/components/Card/styles';
 import { Globals } from 'styles/utilities/colors';
-import { fadeInFromNone } from 'styles/utilities/animations';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
 export const ServiceTitle = styled.p`
