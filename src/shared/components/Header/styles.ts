@@ -57,6 +57,9 @@ export const BookCallButton = styled.button<{ transparent: boolean }>`
     font-size: ${TextBody.SIZE_5};
     padding: ${Padding.SIZE_3} ${Padding.SIZE_5};
   }
+  @media (max-width: ${Breakpoints.laptop}) {
+    font-size: ${TextBody.SIZE_3};
+  }
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: ${TextBody.SIZE_5};
     letter-spacing: 0.0625rem;
