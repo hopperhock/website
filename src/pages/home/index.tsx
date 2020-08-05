@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import HomeIntroduction from 'modules/home/introduction';
 import ServicesSummary from 'modules/home/services-summary';
 import ParallaxBanner from 'shared/components/Parallax-Banner';
+import Nearshore from 'modules/home/nearshore';
+import ParallaxBanner from 'shared/components/ParallaxBanner';
 import { Images } from 'shared/constants/assets';
 import TechSummary from 'modules/home/tech-summary';
 
@@ -23,6 +25,7 @@ const Home: FC = () => {
       <Container>
         <HomeIntroduction />
         <ServicesSummary />
+        <Nearshore />
         <ParallaxBanner
           bannerContainer={Images.PARALLAX_BANNER_CONTAINER}
           bannerImage={Images.PARALLAX_BANNER_BACKGROUND}
