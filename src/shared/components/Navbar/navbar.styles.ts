@@ -15,7 +15,7 @@ export const Nav = styled.div<{ transparent: boolean }>`
   display: flex;
   align-items: center;
   padding: 0 ${Spacing.SIZE_13};
-  z-index: 1000;
+  z-index: 2;
   &[data-transparent='false'] {
     animation: ${({ theme }) => backgroundFadeIn(theme.WHITE)} 0.35s ease-in-out 0s 1;
     background-color: ${({ theme }) => theme.WHITE};
@@ -83,7 +83,7 @@ export const NavAction = styled.div<{ transparent: boolean }>`
   border: 0.0625rem solid
     ${({ theme, transparent }) => (transparent ? hexToRGB(theme.TERTIARY_COLOR_LIGHT_3, '1') : theme.BLACK)};
   outline: inherit;
-  color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.WHITE)};
+  color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.TEXT_COLOR)};
   background-color: ${({ theme, transparent }) => (transparent ? 'inherit' : theme.BLACK)};
   font-size: ${TextBody.SIZE_4};
   font-weight: ${FontWeight.medium};

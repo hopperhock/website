@@ -1,6 +1,6 @@
 export enum Title {
   SIZE_1 = '3.25rem',
-  SIZE_2 = '3.25rem',
+  SIZE_2 = '3rem',
   SIZE_3 = '2.75rem',
   SIZE_4 = '2.5rem',
   SIZE_5 = '2.25rem',
