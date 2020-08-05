@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="132px" height="122px" viewBox="0 0 132 122" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>angular-icon</title>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-571.000000, -3988.000000)" fill-rule="nonzero">
+            <g id="Technology-Stack-Section" transform="translate(-388.731805, 3303.000000)">
+                <g id="Technology-Stack-Logos" transform="translate(492.731805, 407.000000)">
+                    <g id="angular-icon" transform="translate(468.000000, 278.000000)">
+                        <polygon id="Path" fill="#D2D2D2" points="64.7924711 0 0 20.2005768 10.2389453 95.4040154 64.8609658 122 119.765144 95.0435577 130 19.8428361"></polygon>
+                        <polygon id="Path" fill="#9FB3C8" points="123 24.7522134 64 7 64 116 113.444542 91.8552368 122.999488 24.7522134"></polygon>
+                        <polygon id="Path" fill="#BCCCDC" points="8 25.0735969 16.7174678 92.1764113 65 116 65 7 8.00050786 25.0731452"></polygon>
+                        <path d="M81,64.2249352 L64.8660708,70.9455629 L47.8612746,70.9455629 L39.8678148,88.755317 L25,89 L64.8660708,10 L81,64.2253883 L81,64.2249352 Z M79.440375,60.8415124 L64.9734031,35.3296797 L53.1063149,60.4024422 L64.8655621,60.4024422 L79.440375,60.8419655 L79.440375,60.8415124 Z" id="Shape" fill="#F2F2F2"></path>
+                        <polygon id="Path" fill="#DADADA" points="64.1075859 36.2540873 77.668533 61.2710024 64.0307388 61.2710024 64 71.746782 82.858272 71.7625934 91.6721191 89.7659902 106 90 64 11"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
