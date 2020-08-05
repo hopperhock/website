@@ -38,6 +38,9 @@ export const NavLink = styled.a<{ transparent: boolean }>`
     font-size: ${TextBody.SIZE_3};
     padding: 0 ${Padding.SIZE_4};
   }
+  @media (max-width: ${Breakpoints.laptop}) {
+    font-size: ${TextBody.SIZE_1};
+  }
   @media (max-width: ${Breakpoints.tablet}) {
     padding: 0 ${Padding.SIZE_3};
   }
