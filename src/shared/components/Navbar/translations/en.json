@@ -1,8 +1,6 @@
 {
-  "links": {
-    "home": "Home",
-    "services": "Services",
-    "aboutUs": "About Us",
-    "contactUs": "Contact Us"
-  }
+  "main-nav.home": "Home",
+  "main-nav.services": "Services",
+  "main-nav.about-us": "About Us",
+  "main-nav.contact-us": "Contact Us"
 }

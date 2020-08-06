@@ -1,12 +1,8 @@
 {
-  "links": {
-    "home": "Home",
-    "services": "Services",
-    "aboutUs": "About Us",
-    "contactUs": "Contact Us"
-  },
-  "footer": {
-    "description": "Are you interested in having a conversation with us?",
-    "link": "Book a call"
-  }
+  "mobile-nav.home": "Home",
+  "mobile-nav.services": "Services",
+  "mobile-nav.about-us": "About Us",
+  "mobile-nav.contact-us": "Contact Us",
+  "mobile-nav.description": "Are you interested in having a conversation with us?",
+  "mobile-nav.book-call": "Book a call"
 }

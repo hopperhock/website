@@ -21,13 +21,13 @@ const MobileNavbar: FC<Props> = ({ visible, onToggle }) => {
       <MobileNav visible={visible}>
         <Brand />
         <ul>
-          <li onClick={() => handleRedirect('/home')}>{translations.links.home}</li>
-          <li onClick={() => handleRedirect('/services')}>{translations.links.services}</li>
-          <li onClick={() => handleRedirect('/about-us')}>{translations.links.aboutUs}</li>
-          <li onClick={() => handleRedirect('/contact-us')}>{translations.links.contactUs}</li>
+          <li onClick={() => handleRedirect('/home')}>{translations['mobile-nav.home']}</li>
+          <li onClick={() => handleRedirect('/services')}>{translations['mobile-nav.services']}</li>
+          <li onClick={() => handleRedirect('/about-us')}>{translations['mobile-nav.about-us']}</li>
+          <li onClick={() => handleRedirect('/contact-us')}>{translations['mobile-nav.contact-us']}</li>
         </ul>
         <MobileNavFooter>
-          {translations.footer.description} <br /> <a href="#">{translations.footer.link}</a>
+          {translations['mobile-nav.description']} <br /> <a href="#">{translations['mobile-nav.book-call']}</a>
         </MobileNavFooter>
       </MobileNav>
     </div>
