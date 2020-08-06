@@ -28,7 +28,7 @@ export const NearshoreHeading = styled.div`
   font-size: ${Title.SIZE_4};
   max-width: 29ch;
   span {
-    color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_2};
+    color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     font-weight: ${FontWeight.bold};
   }
   @media (max-width: ${Breakpoints.laptop}) {
