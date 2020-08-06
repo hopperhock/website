@@ -26,6 +26,7 @@ export default styled.div`
 export const NearshoreHeading = styled.div`
   color: ${({ theme }) => theme.SECONDARY_COLOR_DARK_5};
   font-size: ${Title.SIZE_4};
+  max-width: 29ch;
   span {
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_2};
     font-weight: ${FontWeight.bold};
@@ -71,7 +72,7 @@ export const Benefit = styled.li`
   justify-content: space-evenly;
   align-items: center;
   margin-right: ${Margin.SIZE_5};
-  svg {
+  img {
     height: 125px;
     width: 100px;
   }
@@ -81,9 +82,10 @@ export const Benefit = styled.li`
     margin-top: ${Margin.SIZE_4};
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     text-align: center;
+    max-width: 10ch;
   }
   @media (max-width: ${Breakpoints.laptop}) {
-    svg {
+    img {
       height: 115;
       width: 90px;
     }
@@ -93,7 +95,7 @@ export const Benefit = styled.li`
     }
   }
   @media (max-width: ${Breakpoints.tablet}) {
-    svg {
+    img {
       height: 105;
       width: 80px;
     }
@@ -103,7 +105,7 @@ export const Benefit = styled.li`
     }
   }
   @media (max-width: ${Breakpoints.mobile}) {
-    svg {
+    img {
       height: 85px;
       width: 50px;
     }

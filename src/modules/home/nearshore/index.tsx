@@ -1,44 +1,35 @@
 import React from 'react';
 import Container, { NearshoreHeading, LineSeparator, NearshoreBenefits, Benefit } from './styles';
-import { NSTrips } from 'styles/illustrations/NSTrips';
-import { NSCost } from 'styles/illustrations/NSCost';
-import { NSQuality } from 'styles/illustrations/NSQuality';
-import { NSCulture } from 'styles/illustrations/NSCulture';
-import { NSTime } from 'styles/illustrations/NSTime';
+import { Images } from 'shared/constants/assets';
+import * as translations from './Translations/en.json';
 
 const Nearshore = () => {
   return (
     <Container>
       <NearshoreHeading>
-        <span>WE GUARANTEE</span> The best Nearshore <br /> Experience in Costa Rica
+        <span>{translations['home.nearshore.highlighted-title']}</span> {translations['home.nearshore.title']}
       </NearshoreHeading>
       <LineSeparator />
       <NearshoreBenefits>
         <Benefit>
-          <NSTrips />
-          <span>
-            No more <br /> long trips
-          </span>
+          <img src={Images.NS_TRIPS} />
+          <span>{translations['home.nearshore.ns-trips']}</span>
         </Benefit>
         <Benefit>
-          <NSCost />
-          <span>Lower Cost</span>
+          <img src={Images.NS_COST} />
+          <span>{translations['home.nearshore.ns-cost']}</span>
         </Benefit>
         <Benefit>
-          <NSQuality />
-          <span>
-            Quality <br /> performers
-          </span>
+          <img src={Images.NS_QUALITY} />
+          <span>{translations['home.nearshore.ns-quality']}</span>
         </Benefit>
         <Benefit>
-          <NSCulture />
-          <span>
-            Great <br /> Culture
-          </span>
+          <img src={Images.NS_CULTURE} />
+          <span>{translations['home.nearshore.ns-culture']}</span>
         </Benefit>
         <Benefit>
-          <NSTime />
-          <span>Time zone</span>
+          <img src={Images.NS_TIME} />
+          <span>{translations['home.nearshore.ns-time']}</span>
         </Benefit>
       </NearshoreBenefits>
     </Container>
