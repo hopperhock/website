@@ -6,11 +6,7 @@ type GenericDividerProps = {
 };
 
 const GenericDivider: FC<GenericDividerProps> = ({ color }) => {
-  return (
-    <>
-      <TitleDivider color={color} />
-    </>
-  );
+  return <TitleDivider color={color} />;
 };
 
 export default GenericDivider;
