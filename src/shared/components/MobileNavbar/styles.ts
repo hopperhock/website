@@ -3,13 +3,14 @@ import { HopperhockLogo } from 'styles/illustrations/HopperhockLogo';
 import { Margin, Padding } from 'styles/utilities/gutters';
 import { TextBody, FontWeight } from 'styles/utilities/font-sizes';
 import { slideIn, slideOut } from 'styles/utilities/animations';
+import { Breakpoints } from 'styles/utilities/breakpoints';
 
 type Props = {
   visible: boolean;
 };
 
 const MobileNav = styled.div<Props>`
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   position: fixed;
@@ -21,6 +22,7 @@ const MobileNav = styled.div<Props>`
   width: 80%;
   height: 100vh;
   margin-top: ${Margin.SIZE_0};
+  transform: translate3d(-100%, 0, 0);
   -webkit-animation: ${({ visible }) => (visible ? slideIn : slideOut)} 0.5s forwards;
   animation: ${({ visible }) => (visible ? slideIn : slideOut)} 0.5s forwards;
   ul {
@@ -48,6 +50,9 @@ const MobileNav = styled.div<Props>`
     :active {
       background-color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_1};
     }
+  }
+  @media (max-width: ${Breakpoints.mobile}) {
+    display: flex;
   }
 `;
 
