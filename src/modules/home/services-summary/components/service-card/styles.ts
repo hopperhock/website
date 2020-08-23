@@ -2,8 +2,9 @@ import { Subtitle, Title, TextBody } from '../../../../../styles/utilities/font-
 import styled from 'styled-components';
 import { Margin } from 'styles/utilities/gutters';
 import { ChangeColorContainer } from 'shared/components/Card/styles';
-import { Globals } from 'styles/utilities/colors';
+import { Globals, Alternatives } from 'styles/utilities/colors';
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { hexToRGB } from 'styles/utilities/funtions';
 
 export const ServiceTitle = styled.p`
   font-family: roboto bold;
@@ -61,8 +62,7 @@ export const Containers = styled.div`
     position: absolute;
     margin-left: 8.1rem;
     width: 23.25rem;
-    background-color: black;
-    opacity: 0.8;
+    background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
     @media (max-width: ${Breakpoints.mobile}) {
       margin-left: 0rem;
       width: 21.25rem;

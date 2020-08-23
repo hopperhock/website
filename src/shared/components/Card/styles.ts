@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Alternatives } from 'styles/utilities/colors';
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { hexToRGB } from 'styles/utilities/funtions';
 
 export const Image = styled.div<{ cardImage: string }>`
   position: relative;
@@ -16,8 +17,7 @@ export const Image = styled.div<{ cardImage: string }>`
 
 export const ChangeColorContainer = styled.div`
   position: absolute;
-  background-color: ${Alternatives.LIGHT_SLATE_GREY};
-  opacity: 0.9;
+  background-color: ${hexToRGB(Alternatives.LIGHT_SLATE_GREY, '0.9')};
   width: 31.25rem;
   height: 25rem;
   border: 0;

@@ -1,3 +1,4 @@
+export const HOME_VIDEO = 'https://hopperhock-ui-assets.s3.amazonaws.com/videos/HopperHockVideo.mp4';
 export enum Images {
   HOME_VIDEO_POSTER = '/Images/VideoPoster.png',
   SERVICE_IMAGE_CONTAINER = '/Images/ServiceMainContainer.png',
@@ -13,7 +14,7 @@ export enum Images {
   PARALLAX_BANNER_BACKGROUND = '/Images/BannerBackgroundImage.png',
   SERVICE_WEB_BACKGROUND_WEB = '/Images/ServiceWebBackground.jpg',
   SERVICE_WEB_BACKGROUND_UX = '/Images/ServiceUXBackground.png',
-  SERVICE_WEB_BACKGROUND_QA = '/Images/ServiceqaBackground.jpeg',
+  SERVICE_WEB_BACKGROUND_QA = '/Images/ServiceQABackground.jpeg',
   STACK_SECTION_BACKGROUND = '/Images/TechnologyStackBackground.png',
   STACK_IMAGES_BASE_URL = '/Images/StackImages/'
 }

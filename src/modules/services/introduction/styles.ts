@@ -17,7 +17,6 @@ export default styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    background: ${({ theme }) => hexToRGB(theme.BLACK, '0.6')};
   }
 `;
 
