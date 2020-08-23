@@ -19,7 +19,7 @@ const Home: FC = () => {
     <>
       <Head>
         <title>HopperHock - Improve, Grown & Innovate</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/static/favicon.ico" />
       </Head>
       <Container>
         <HomeIntroduction />
