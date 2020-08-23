@@ -29,7 +29,7 @@ export const NearshoreHeading = styled.div`
   max-width: 29ch;
   span {
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
-    font-weight: ${FontWeight.bold};
+    font-family: roboto bold;
   }
   @media (max-width: ${Breakpoints.laptop}) {
     font-size: ${Title.SIZE_5};
