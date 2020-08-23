@@ -16,7 +16,8 @@ export enum Images {
   SERVICE_WEB_BACKGROUND_UX = '/Images/ServiceUXBackground.png',
   SERVICE_WEB_BACKGROUND_QA = '/Images/ServiceQABackground.jpeg',
   STACK_SECTION_BACKGROUND = '/Images/TechnologyStackBackground.png',
-  STACK_IMAGES_BASE_URL = '/Images/StackImages/'
+  STACK_IMAGES_BASE_URL = '/Images/StackImages/',
+  WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/'
 }
 
 export var STACK_IMAGES = [
@@ -36,3 +37,5 @@ export var STACK_IMAGES = [
   'postgresql.svg',
   'aws.svg'
 ];
+
+export var WORK_PROCESS_STEPS = ['Process 1.png', 'Process 3.png', 'Process 5.png', , 'Process 2.png', 'Process 4.png'];
