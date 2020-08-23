@@ -7,6 +7,8 @@ export enum Images {
   NS_TIME = '/Images/Home/NSTime.svg',
   NS_TRIPS = '/Images/Home/NSTrips.svg',
   SERVICES_BANNER = '/Images/Services/ServicesBanner.jpg',
+  SERVICES_DESCRIPTION = '/Images/Services/ServicesDescription.svg',
+  SERVICES_DESCRIPTION_MOBILE = '/Images/Services/ServicesDescriptionMobile.svg',
   PARALLAX_BANNER_CONTAINER = '/Images/BannerIrregularContainer.svg',
   PARALLAX_BANNER_BACKGROUND = '/Images/BannerBackgroundImage.png',
   SERVICE_WEB_BACKGROUND_WEB = '/Images/ServiceWebBackground.jpg',
