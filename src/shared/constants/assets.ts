@@ -7,7 +7,7 @@ export enum Images {
   NS_QUALITY = '/Images/Home/NSQuality.svg',
   NS_TIME = '/Images/Home/NSTime.svg',
   NS_TRIPS = '/Images/Home/NSTrips.svg',
-  SERVICES_BANNER = '/Images/Services/ServicesBanner.jpg',
+  SERVICES_BANNER = '/Images/Services/ServicesBanner.png',
   SERVICES_DESCRIPTION = '/Images/Services/ServicesDescription.svg',
   SERVICES_DESCRIPTION_MOBILE = '/Images/Services/ServicesDescriptionMobile.svg',
   PARALLAX_BANNER_CONTAINER = '/Images/BannerIrregularContainer.svg',
@@ -17,7 +17,7 @@ export enum Images {
   SERVICE_WEB_BACKGROUND_QA = '/Images/ServiceQABackground.jpeg',
   STACK_SECTION_BACKGROUND = '/Images/TechnologyStackBackground.png',
   STACK_IMAGES_BASE_URL = '/Images/StackImages/',
-  WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/'
+  WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/',
 }
 
 export var STACK_IMAGES = [
@@ -35,7 +35,7 @@ export var STACK_IMAGES = [
   'oracle.svg',
   'sqlserver.svg',
   'postgresql.svg',
-  'aws.svg'
+  'aws.svg',
 ];
 
 export var WORK_PROCESS_STEPS = ['Process 1.png', 'Process 3.png', 'Process 5.png', , 'Process 2.png', 'Process 4.png'];
