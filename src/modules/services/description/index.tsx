@@ -1,17 +1,16 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Container, {
-  ServicesDescriptionBackground,
+  MainBackground,
   StaffAugmentation,
   LineSeparator,
   ServicesDescriptionBackgroundMobile
 } from './styles';
 import { Images } from 'shared/constants/assets';
-import { Breakpoints } from 'styles/utilities/breakpoints';
 
-function ServicesDescription() {
+const ServicesDescription: FC = () => {
   return (
     <Container>
-      <ServicesDescriptionBackground src={Images.SERVICES_DESCRIPTION} alt="Services Background" />
+      <MainBackground />
       <ServicesDescriptionBackgroundMobile src={Images.SERVICES_DESCRIPTION_MOBILE} alt="Services Background" />
       <StaffAugmentation>
         Technical <br /> Staff <span>Augmentation</span>
@@ -23,6 +22,6 @@ function ServicesDescription() {
       </StaffAugmentation>
     </Container>
   );
-}
+};
 
 export default ServicesDescription;

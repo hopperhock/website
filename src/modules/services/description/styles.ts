@@ -1,7 +1,52 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import ServicesDescriptionBackground from 'styles/illustrations/ServicesDescriptionBackground';
 import { Title, FontWeight, Subtitle, TextBody } from 'styles/utilities/font-sizes';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 import { Margin } from 'styles/utilities/gutters';
+
+// Animations
+const circleTranslate = keyframes`
+  0% {
+    transform: translate(10%, -1%);
+  }
+  25% {
+    opacity: 1
+  }
+  75%, 100% {
+    transform: translate(-9.5%, 10.5%);
+    opacity: 0
+  }
+`;
+
+const circleFade = keyframes`
+ 20% {
+    opacity: 0.2;
+  }
+ 40% {
+    opacity: 0.4;
+  }
+ 60% {
+    opacity: 0.6;
+  }
+ 80% {
+    opacity: 0.8;
+  }
+ 100% {
+    opacity: 1;
+  }
+`;
+
+const triangleTranslate = keyframes`
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(2%, 2%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+`;
 
 export default styled.div`
   position: relative;
@@ -14,12 +59,38 @@ export default styled.div`
   }
 `;
 
-export const ServicesDescriptionBackground = styled.img`
+export const MainBackground = styled(ServicesDescriptionBackground)`
   position: relative;
   width: 100%;
   margin-top: -46%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  overflow-x: none;
+  .triangle {
+    -webkit-animation: ${triangleTranslate} 6s infinite;
+    animation: ${triangleTranslate} 6s infinite;
+  }
+  .triangle-1 {
+    animation-delay: 2.5s;
+  }
+  .triangle-2 {
+    animation-delay: 1.5s;
+  }
+  .triangle-3 {
+    animation-delay: 0s;
+  }
+  .circle {
+    transition: all 1s linear;
+  }
+  .circle-1:hover {
+    transform: translate(2%, 1%);
+  }
+  .circle-2:hover {
+    transform: translate(-2%, 1%);
+  }
+  .animated-circle {
+    transform: translate3d(6%, 1.5%, 0);
+    -webkit-animation: ${circleTranslate} 4.5s infinite;
+    animation: ${circleTranslate} 4.5s infinite;
+  }
   @media (max-width: ${Breakpoints.mobile}) {
     display: none;
     margin-top: -50vh;
