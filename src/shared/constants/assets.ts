@@ -19,6 +19,12 @@ export enum Images {
   STACK_IMAGES_BASE_URL = '/Images/StackImages/',
   WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/',
   ABOUT_US_INTRODUCTION = '/Images/AboutUs/Introduction/AboutUsIntroduction.svg',
+  CB_DESKTOP = '/Images/Services/Capabilities/desktop.svg',
+  CB_WEB = '/Images/Services/Capabilities/web.svg',
+  CB_MOBILE = '/Images/Services/Capabilities/mobile.svg',
+  CB_BACKEND = '/Images/Services/Capabilities/backend.svg',
+  CB_UX = '/Images/Services/Capabilities/ux.svg',
+  CB_QA = '/Images/Services/Capabilities/qa.svg',
 }
 
 export var STACK_IMAGES = [
