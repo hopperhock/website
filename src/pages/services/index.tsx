@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import ServicesIntroduction from 'modules/services/introduction';
 import ServicesDescription from 'modules/services/description';
 import WorkSteps from 'modules/services/work-steps';
+import ServiceCapabilities from 'modules/services/capabilities';
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ const Services: FC = () => {
       <ServicesIntroduction />
       <ServicesDescription />
       <WorkSteps />
+      <ServiceCapabilities />
     </Container>
   );
 };
