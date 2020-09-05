@@ -46,11 +46,11 @@ export const LineSeparator = styled.div`
   width: 150px;
   height: 1px;
   margin-top: ${Margin.SIZE_5};
-  border: solid 3px #627d98;
+  border: solid 3px ${({ theme }) => theme.SECONDARY_COLOR_DARK_5};
   background-color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_2};
   list-style-type: none;
   @media (max-width: ${Breakpoints.mobile}) {
-    border: solid 1px #627d98;
+    border: solid 1px ${({ theme }) => theme.SECONDARY_COLOR_DARK_5};
     width: 100px;
   }
 `;
@@ -60,7 +60,7 @@ export const Capabilities = styled.ul`
   justify-content: space-between;
   list-style-type: none;
   margin-top: 124px;
-  padding: 0;
+  padding: 0px;
   @media (max-width: ${Breakpoints.mobile}) {
     margin-top: 50px;
     flex-wrap: wrap;
