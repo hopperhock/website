@@ -25,6 +25,8 @@ export enum Images {
   CB_BACKEND = '/Images/Services/Capabilities/backend.svg',
   CB_UX = '/Images/Services/Capabilities/ux.svg',
   CB_QA = '/Images/Services/Capabilities/qa.svg',
+  CONTACT_US_BANNER = '/Images/ContactUs/ContactUsbanner.png',
+  CONTACT_US_FORM = '/Images/ContactUs/ContactUsForm.png',
 }
 
 export var STACK_IMAGES = [
