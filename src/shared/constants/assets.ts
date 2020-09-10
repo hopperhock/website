@@ -18,6 +18,7 @@ export enum Images {
   STACK_SECTION_BACKGROUND = '/Images/TechnologyStackBackground.png',
   STACK_IMAGES_BASE_URL = '/Images/StackImages/',
   WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/',
+  ABOUT_US_INTRODUCTION = '/Images/AboutUs/Introduction/AboutUsIntroduction.svg',
 }
 
 export var STACK_IMAGES = [
