@@ -51,6 +51,7 @@ const triangleTranslate = keyframes`
 export default styled.div`
   position: relative;
   width: 100%;
+  margin-bottom: -${Margin.SIZE_1};
   @media (max-width: ${Breakpoints.mobile}) {
     height: 40vh;
   }
@@ -167,6 +168,37 @@ export const StaffAugmentation = styled.div`
     p {
       font-size: ${TextBody.SIZE_4};
     }
+  }
+`;
+
+export const ServicesExplanation = styled.div`
+  position: absolute;
+  padding: 3.125rem 5rem;
+  padding-bottom: 7rem;
+  width: 60%;
+  left: 50%;
+  bottom: -15%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    184.05deg,
+    ${({ theme }) => theme.TERTIARY_COLOR_DARK_5} -118.41%,
+    ${({ theme }) => theme.SECONDARY_COLOR_DARK_3} 66.96%
+  );
+  z-index: 2;
+  color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_2};
+  font-family: 'Roboto Thin';
+  h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  p {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: justify;
+  }
+  span {
+    font-family: 'Roboto';
+    color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   }
 `;
 

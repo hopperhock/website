@@ -1,7 +1,6 @@
 import { Subtitle } from '../../../styles/utilities/font-sizes';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { Title } from 'styles/utilities/font-sizes';
-import { Margin } from 'styles/utilities/gutters';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
 export const Container = styled.div`
@@ -10,6 +9,7 @@ export const Container = styled.div`
   flex-direction: column;
   min-height: 600px;
   padding: 5%;
+  padding-top: 200px;
   background-image: linear-gradient(
     205deg,
     ${({ theme }) => theme.SECONDARY_COLOR_DARK_1} 50%,
