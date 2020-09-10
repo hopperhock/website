@@ -48,3 +48,10 @@ export var STACK_IMAGES = [
 ];
 
 export var WORK_PROCESS_STEPS = ['Process 1.png', 'Process 3.png', 'Process 5.png', , 'Process 2.png', 'Process 4.png'];
+
+export var SOCIAL_NETWORK_ICONS = [
+  { url: 'http://www.facebook.com', image: '/Images/facebook.svg' },
+  { url: 'http://www.twitter.com', image: '/Images/twitter.svg' },
+  { url: 'http://www.instagram.com', image: '/Images/instagram.svg' },
+  { url: 'http://www.linkedin.com', image: '/Images/linkedin.svg' },
+];
