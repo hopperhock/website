@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 import HomeIntroduction from 'modules/home/introduction';
@@ -14,7 +14,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Home: FC = () => {
+const Home: NextPage = () => {
   return (
     <>
       <Head>
@@ -34,5 +34,9 @@ const Home: FC = () => {
     </>
   );
 };
+
+Home.getInitialProps = () => ({
+  namespacesRequired: ['header'],
+});
 
 export default Home;
