@@ -5,7 +5,9 @@ import ContactForm from 'modules/contact-us/contact-form';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
 const Container = styled.div`
+  position: relative;
   display: flex;
+  flex-direction: row;
   height: 100vh;
   @media (max-width: ${Breakpoints.laptop}) {
     flex-direction: column;
