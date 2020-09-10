@@ -1,11 +1,15 @@
+import App from 'next/app';
 import { AppProps } from 'next/app';
-import { SFC, useEffect } from 'react';
+import { FC, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { THEME } from 'styles/theme';
 import Header from 'shared/components/Header';
 import { GlobalStyles } from 'styles/global-style';
+import { appWithTranslation } from 'shared/utils/internationalization';
 
-const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
+type AppComponent = FC<AppProps> & { getInitialProps: (appContext: any) => Promise<any> };
+
+const MyApp: AppComponent = ({ Component, pageProps }) => {
   useEffect(() => {
     history.scrollRestoration = 'manual';
   }, []);
@@ -19,4 +23,9 @@ const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+  return { ...appProps };
+};
+
+export default appWithTranslation(MyApp);

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import Router from 'next/router';
+import { Router } from 'shared/utils/internationalization';
 
 const redirectTo = '/home';
 
