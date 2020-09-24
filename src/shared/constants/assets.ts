@@ -55,7 +55,23 @@ export const STACK_IMAGES = [
   'aws.svg',
 ];
 
-export var WORK_PROCESS_STEPS = ['Process 1.png', 'Process 3.png', 'Process 5.png', , 'Process 2.png', 'Process 4.png'];
+export var WORK_PROCESS_STEPS_EN = [
+  'En-Process-1.png',
+  'En-Process-3.png',
+  'En-Process-5.png',
+  ,
+  'En-Process-2.png',
+  'En-Process-4.png',
+];
+
+export var WORK_PROCESS_STEPS_ES = [
+  'Es-Process-1.png',
+  'Es-Process-3.png',
+  'Es-Process-5.png',
+  ,
+  'Es-Process-2.png',
+  'Es-Process-4.png',
+];
 
 export var SOCIAL_NETWORK_ICONS = [
   { url: 'http://www.facebook.com', image: '/Images/facebook.svg' },
