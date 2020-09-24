@@ -2,6 +2,7 @@ import { Subtitle } from '../../../styles/utilities/font-sizes';
 import styled from 'styled-components';
 import { Title } from 'styles/utilities/font-sizes';
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { bobAnimation, bobFloat } from 'styles/utilities/animations';
 
 export const Container = styled.div`
   position: relative;
@@ -37,9 +38,29 @@ export const WorkStepsContainer = styled.div`
   > img {
     width: 20%;
     margin: 0% 5%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
     @media (max-width: ${Breakpoints.tablet}) {
       width: 33%;
       margin: 0% 0%;
     }
+  }
+  > img :hover,
+  img :active,
+  img :focus {
+    -webkit-animation-name: ${({ theme }) => bobFloat(theme.WHITE)}, ${({ theme }) => bobAnimation(theme.WHITE)};
+    animation-name: ${({ theme }) => bobFloat(theme.WHITE)}, ${({ theme }) => bobAnimation(theme.WHITE)};
+    -webkit-animation-duration: 0.3s, 1.5s;
+    animation-duration: 0.3s, 1.5s;
+    -webkit-animation-delay: 0s, 0.3s;
+    animation-delay: 0s, 0.3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1, infinite;
+    animation-iteration-count: 1, infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal, alternate;
+    animation-direction: normal, alternate;
   }
 `;
