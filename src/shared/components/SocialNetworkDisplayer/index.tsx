@@ -11,9 +11,9 @@ type ISocialNetworkProps = {
 const SocialNetworkDisplayer: FC<ISocialNetworkProps> = ({ socialLogos }) => {
   return (
     <Container>
-      {socialLogos.map((logo) => {
+      {socialLogos.map(logo => {
         return (
-          <li>
+          <li key={logo.url}>
             <a href={logo.url} target="_blank">
               <img src={logo.image} />
             </a>
