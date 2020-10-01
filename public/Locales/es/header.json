@@ -1,6 +1,5 @@
 {
-    "actions": {
-      "bookACall": "AGENDAR UNA LLAMADA"
-    }
+  "actions": {
+    "bookACall": "AGENDAR UNA LLAMADA"
   }
-  
+}

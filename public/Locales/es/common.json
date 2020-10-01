@@ -1,1 +1,8 @@
-{}
+{
+    "nav": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "aboutUs": "Nosotros",
+        "contactUs": "Contacto"
+    }
+}

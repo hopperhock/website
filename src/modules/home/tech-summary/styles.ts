@@ -6,7 +6,6 @@ import { Breakpoints } from 'styles/utilities/breakpoints';
 
 export const TechContainer = styled.div`
   position: relative;
-  height: 150vh;
   margin-top: -5%;
   background-image: url(${Images.STACK_SECTION_BACKGROUND});
   background-repeat: no-repeat;

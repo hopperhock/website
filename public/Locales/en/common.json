@@ -1,1 +1,8 @@
-{}
+{
+    "nav": {
+        "home": "Home",
+        "services": "Services",
+        "aboutUs": "About us",
+        "contactUs": "Contact us"
+    }
+}
