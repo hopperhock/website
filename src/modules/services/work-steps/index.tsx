@@ -1,12 +1,14 @@
 import React, { FC } from 'react';
 import { Container, HeaderTitle, WorkStepsContainer } from './styles';
-import * as translations from './Translations/en.json';
 import { WORK_PROCESS_STEPS, Images } from 'shared/constants/assets';
+import { useTranslation } from 'shared/utils/internationalization';
 
 const WorkSteps: FC = () => {
+  const { t } = useTranslation('services');
+
   return (
     <Container>
-      <HeaderTitle> {translations['services.how-we-work.title']}</HeaderTitle>
+      <HeaderTitle> {t('how-we-work.title')}</HeaderTitle>
       <WorkStepsContainer>
         {WORK_PROCESS_STEPS.map((image, index) => {
           return <img key={index} src={`${Images.WORK_STEPS_BASE_URL}${image}`} />;

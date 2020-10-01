@@ -1,0 +1,26 @@
+{
+  "capabilities": {
+    "highlighted-title": "OFRECEMOS",
+    "title": "Un Mundo de Posibilidades",
+    "desktop": "Escritorio",
+    "web": "Desarrollo web",
+    "mobile": "Desarollo Móvil",
+    "backend": "Backend",
+    "ux": "UX/UI",
+    "qa": "Control de calidad"
+  },
+  "description": {
+    "tech": "Personal",
+    "staff": "Técnico",
+    "augmentation": "Calificado",
+    "content": "En Hopperhock nos preocupamos por los estandares de la industria, buenas practicas y las habilidades técnicas. Garantizamos un excelente ambiente que contribuya a tu equipo y negocio."
+  },
+  "introduction": {
+    "title": "PODEMOS AYUDARTE",
+    "description": "Hacer realidad sus ideas.",
+    "sub-description": "Mejorar + Crecer + Innovar"
+  },
+  "how-we-work": {
+    "title": "¿Cómo trabajamos?"
+  }
+}

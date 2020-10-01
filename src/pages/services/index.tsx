@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import { NextPage } from 'next';
+import React from 'react';
 import styled from 'styled-components';
 import ServicesIntroduction from 'modules/services/introduction';
 import ServicesDescription from 'modules/services/description';
@@ -10,7 +11,7 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Services: FC = () => {
+const Services: NextPage = () => {
   return (
     <Container>
       <ServicesIntroduction />
@@ -20,5 +21,9 @@ const Services: FC = () => {
     </Container>
   );
 };
+
+Services.getInitialProps = () => ({
+  namespacesRequired: ['header', 'services', 'footer', 'common'],
+});
 
 export default Services;
