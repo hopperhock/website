@@ -1,39 +1,41 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Container, { CapabilitiesHeading, LineSeparator, Capabilities, Service } from './styles';
 import { Images } from 'shared/constants/assets';
-import * as translations from './Translations/en.json';
+import { useTranslation } from 'shared/utils/internationalization';
 
-const ServiceCapabilities = () => {
+const ServiceCapabilities: FC = () => {
+  const { t } = useTranslation('services');
+
   return (
     <Container>
       <CapabilitiesHeading>
-        <span>{translations['home.capabilities.highlighted-title']}</span> {translations['home.capabilities.title']}
+        <span>{t('capabilities.highlighted-title')}</span> {t('capabilities.title')}
       </CapabilitiesHeading>
       <LineSeparator />
       <Capabilities>
         <Service>
           <img src={Images.CB_DESKTOP} />
-          <span>{translations['home.capabilities.desktop']}</span>
+          <span>{t('capabilities.desktop')}</span>
         </Service>
         <Service>
           <img src={Images.CB_WEB} />
-          <span>{translations['home.capabilities.web']}</span>
+          <span>{t('capabilities.web')}</span>
         </Service>
         <Service>
           <img src={Images.CB_MOBILE} />
-          <span>{translations['home.capabilities.mobile']}</span>
+          <span>{t('capabilities.mobile')}</span>
         </Service>
         <Service>
           <img src={Images.CB_BACKEND} />
-          <span>{translations['home.capabilities.backend']}</span>
+          <span>{t('capabilities.backend')}</span>
         </Service>
         <Service>
           <img src={Images.CB_UX} />
-          <span>{translations['home.capabilities.ux']}</span>
+          <span>{t('capabilities.ux')}</span>
         </Service>
         <Service>
           <img src={Images.CB_QA} />
-          <span>{translations['home.capabilities.qa']}</span>
+          <span>{t('capabilities.qa')}</span>
         </Service>
       </Capabilities>
     </Container>

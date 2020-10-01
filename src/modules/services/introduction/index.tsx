@@ -1,19 +1,21 @@
-import React from 'react';
+import React, { FC } from 'react';
+import { useTranslation } from 'shared/utils/internationalization';
 import Container, { ServicesIntroDescription } from './styles';
-import * as translations from './translations/en.json';
 
-function ServicesIntroduction() {
+const ServicesIntroduction: FC = () => {
+  const { t } = useTranslation('services');
+
   return (
     <Container>
       <ServicesIntroDescription>
-        <h1>{translations['services.introduction.title']}</h1>
+        <h1>{t('introduction.title')}</h1>
         <p>
-          <span>{translations['services.introduction.description']}</span> <br />{' '}
-          {translations['services.introduction.sub-description']}
+          <span>{t('introduction.description')}</span> <br />{' '}
+          {t('introduction.sub-description')}
         </p>
       </ServicesIntroDescription>
     </Container>
   );
-}
+};
 
 export default ServicesIntroduction;
