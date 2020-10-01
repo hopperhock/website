@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 };
 
 Home.getInitialProps = () => ({
-  namespacesRequired: ['header', 'footer', 'common'],
+  namespacesRequired: ['header', 'home', 'footer', 'common'],
 });
 
 export default Home;

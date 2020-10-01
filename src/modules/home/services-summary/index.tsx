@@ -1,29 +1,31 @@
 import React, { FC } from 'react';
 import { Container, ServicesContainer, HeaderTitle, HeaderSubtitle } from './styles';
-import * as translations from './Translations/en.json';
 import { Images } from 'shared/constants/assets';
 import ServiceCard from './components/service-card';
+import { useTranslation } from 'shared/utils/internationalization';
 
 const ServicesSummary: FC = () => {
+  const { t } = useTranslation('home');
+
   return (
     <Container>
-      <HeaderTitle> {translations['home.services.title']}</HeaderTitle>
-      <HeaderSubtitle> {translations['home.services.subtitle']}</HeaderSubtitle>
+      <HeaderTitle> {t('services.title')}</HeaderTitle>
+      <HeaderSubtitle> {t('services.subtitle')}</HeaderSubtitle>
       <ServicesContainer>
         <ServiceCard
-          serviceTitle={translations['home.services.develop.title']}
+          serviceTitle={t('services.develop.title')}
           image={Images.SERVICE_WEB_BACKGROUND_WEB}
-          description={translations['home.services.develop.description']}
+          description={t('services.develop.description')}
         ></ServiceCard>
         <ServiceCard
-          serviceTitle={translations['home.services.qa.title']}
+          serviceTitle={t('services.qa.title')}
           image={Images.SERVICE_WEB_BACKGROUND_QA}
-          description={translations['home.services.qa.description']}
+          description={t('services.qa.description')}
         ></ServiceCard>
         <ServiceCard
-          serviceTitle={translations['home.services.ux.title']}
+          serviceTitle={t('services.ux.title')}
           image={Images.SERVICE_WEB_BACKGROUND_UX}
-          description={translations['home.services.ux.description']}
+          description={t('services.ux.description')}
         ></ServiceCard>
       </ServicesContainer>
     </Container>
