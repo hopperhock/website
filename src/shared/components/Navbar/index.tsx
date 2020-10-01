@@ -1,26 +1,28 @@
 import React, { FC } from 'react';
 import { NavLink, NavLinks } from './styles';
 import Link from 'next/link';
-import * as translations from './translations/en.json';
+import { useTranslation } from 'shared/utils/internationalization';
 
 type Props = {
   transparent: boolean;
 };
 
 const Navbar: FC<Props> = ({ transparent }) => {
+  const { t } = useTranslation('common')
+
   return (
     <NavLinks>
       <Link href="/home">
-        <NavLink transparent={transparent}>{translations['main-nav.home']}</NavLink>
+        <NavLink transparent={transparent}>{t('nav.home')}</NavLink>
       </Link>
       <Link href="/services">
-        <NavLink transparent={transparent}>{translations['main-nav.services']}</NavLink>
+        <NavLink transparent={transparent}>{t('nav.services')}</NavLink>
       </Link>
       <Link href="/about-us">
-        <NavLink transparent={transparent}>{translations['main-nav.about-us']}</NavLink>
+        <NavLink transparent={transparent}>{t('nav.aboutUs')}</NavLink>
       </Link>
       <Link href="/contact-us">
-        <NavLink transparent={transparent}>{translations['main-nav.contact-us']}</NavLink>
+        <NavLink transparent={transparent}>{t('nav.contactUs')}</NavLink>
       </Link>
     </NavLinks>
   );
