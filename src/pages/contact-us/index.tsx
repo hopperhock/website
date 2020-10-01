@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import ContactInformation from 'modules/contact-us/contact-information';
 import ContactForm from 'modules/contact-us/contact-form';
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { NextPage } from 'next';
 
 const Container = styled.div`
   position: relative;
@@ -14,7 +15,7 @@ const Container = styled.div`
   }
 `;
 
-const ContactUs: FC = () => {
+const ContactUs: NextPage = () => {
   return (
     <Container>
       <ContactInformation />
@@ -23,4 +24,8 @@ const ContactUs: FC = () => {
   );
 };
 
+
+ContactUs.getInitialProps = () => ({
+  namespacesRequired: ['header', 'contact-us', 'footer', 'common'],
+});
 export default ContactUs;
