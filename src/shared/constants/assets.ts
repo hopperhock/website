@@ -27,9 +27,13 @@ export enum Images {
   CB_QA = '/Images/Services/Capabilities/qa.svg',
   CONTACT_US_BANNER = '/Images/ContactUs/ContactUsbanner.png',
   CONTACT_US_FORM = '/Images/ContactUs/ContactUsForm.png',
+  SOCIAL_IMAGES_BASE_URL = '/Images/SocialImages/',
+  FOOTER_BACKGROUND = '/Images/FooterBackgroundImage.png',
+  FOOTER_SOCIAL_BACKGROUND = '/Images/FooterSocialBackgroundImage.png',
+  BRAND_WHITE = '/Images/BrandWhite.png',
 }
 
-export var STACK_IMAGES = [
+export const STACK_IMAGES = [
   'dotnet.svg',
   'java.svg',
   'spring.svg',
@@ -54,4 +58,11 @@ export var SOCIAL_NETWORK_ICONS = [
   { url: 'http://www.twitter.com', image: '/Images/twitter.svg' },
   { url: 'http://www.instagram.com', image: '/Images/instagram.svg' },
   { url: 'http://www.linkedin.com', image: '/Images/linkedin.svg' },
+];
+
+export const SOCIAL_IMAGES = [
+  'twitter.svg',
+  'facebook.svg',
+  'instagram.svg',
+  'linkedin.svg'
 ];
