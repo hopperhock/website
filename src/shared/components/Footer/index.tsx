@@ -4,9 +4,11 @@ import { Container, Content, CopyrightContainer, Divisor, ImagesContainer, Socia
 import { Images, SOCIAL_IMAGES } from 'shared/constants/assets';
 import LeftContainer from './LeftContainer';
 import RightContainer from './RightContainer';
+import { useTranslation } from 'shared/utils/internationalization';
 
 const Footer: FC = () => {
   const today = new Date();
+  const { t } = useTranslation('common');
 
   return (
     <Container footerImageSource={Images.FOOTER_BACKGROUND}>
@@ -18,7 +20,7 @@ const Footer: FC = () => {
       <SocialContainer socialImageSource={Images.FOOTER_SOCIAL_BACKGROUND}>
         <CopyrightContainer>
           © {today.getFullYear()}
-          <span>&nbsp; HopperHock &nbsp;</span>all rights reserved.
+          <span>&nbsp; HopperHock &nbsp;</span>{t('footer.copyright')}
         </CopyrightContainer>
         <ImagesContainer>
           {SOCIAL_IMAGES.map((image, index) => {

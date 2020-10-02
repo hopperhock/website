@@ -23,7 +23,7 @@ const Services: NextPage = () => {
 };
 
 Services.getInitialProps = () => ({
-  namespacesRequired: ['header', 'services', 'footer', 'common'],
+  namespacesRequired: ['common', 'services'],
 });
 
 export default Services;
