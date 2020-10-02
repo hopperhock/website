@@ -16,7 +16,7 @@ const AboutUs: NextPage = () => {
 };
 
 AboutUs.getInitialProps = () => ({
-  namespacesRequired: ['header', 'about-us', 'footer', 'common'],
+  namespacesRequired: ['common', 'about-us'],
 });
 
 

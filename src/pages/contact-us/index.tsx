@@ -26,6 +26,6 @@ const ContactUs: NextPage = () => {
 
 
 ContactUs.getInitialProps = () => ({
-  namespacesRequired: ['header', 'contact-us', 'footer', 'common'],
+  namespacesRequired: ['common', 'contact-us'],
 });
 export default ContactUs;

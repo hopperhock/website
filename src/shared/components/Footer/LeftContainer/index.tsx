@@ -15,7 +15,7 @@ import {
 } from './styles';
 
 const LeftContainer: FC = () => {
-  const { t } = useTranslation('footer');
+  const { t } = useTranslation('common');
 
   return (
     <Container>
@@ -23,20 +23,20 @@ const LeftContainer: FC = () => {
         <BrandImage src={Images.BRAND_WHITE} />
       </BrandContainer>
       <SchedulleCallContainer>
-        <LeftLabel>{t('left.wantTalkAbout')}</LeftLabel>
+        <LeftLabel>{t('footer.left.wantTalkAbout')}</LeftLabel>
         <ButtonContainer>
-          <ButtonText>{t('left.scheduleCall')}</ButtonText>
+          <ButtonText>{t('footer.left.scheduleCall')}</ButtonText>
         </ButtonContainer>
       </SchedulleCallContainer>
       <ContactInformationContainer>
         <ContactText>
-          <span>{t("left.address.label")}</span>{t("left.address.value")}
+          <span>{t("footer.left.address.label")}</span>{t("footer.left.address.value")}
         </ContactText>
         <ContactText>
-          <span>{t("left.phone.label")}</span> 83253452
+          <span>{t("footer.left.phone.label")}</span> 83253452
         </ContactText>
         <ContactText>
-          <span>{t("left.email.label")}</span> <a href="mailto:sales@hopperhock.com">sales@hopperhock.com</a>
+          <span>{t("footer.left.email.label")}</span> <a href="mailto:sales@hopperhock.com">sales@hopperhock.com</a>
         </ContactText>
       </ContactInformationContainer>
     </Container>

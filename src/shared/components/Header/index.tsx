@@ -5,7 +5,7 @@ import MobileNavbar from '../MobileNavbar';
 import { useTranslation } from 'shared/utils/internationalization';
 
 const Header: FC = () => {
-  const { t } = useTranslation('header');
+  const { t } = useTranslation('common');
   const [isTransparent, setIsTransparent] = useState(true);
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
   useEffect(() => {
@@ -26,7 +26,7 @@ const Header: FC = () => {
       <Brand transparent={isTransparent} />
       <MobileNavbar visible={isMobileNavVisible} onToggle={handleMobileToggled} />
       <Navbar transparent={isTransparent} />
-      <BookCallButton transparent={isTransparent}>{t('actions.bookACall')}</BookCallButton>
+      <BookCallButton transparent={isTransparent}>{t('nav.bookACall')}</BookCallButton>
       <ToggleButton transparent={isTransparent} onClick={handleMobileToggled}>
         <span />
         <span />
