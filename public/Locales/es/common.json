@@ -4,7 +4,8 @@
     "services": "Servicios",
     "aboutUs": "Nosotros",
     "contactUs": "Contacto",
-    "bookACall": "AGENDAR UNA LLAMADA"
+    "bookACall": "AGENDAR UNA LLAMADA",
+    "description": "¿Estás interesado en conversar con nosotros?"
   },
   "footer": {
     "copyright": "Todos los derechos reservados.",

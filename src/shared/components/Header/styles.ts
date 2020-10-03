@@ -93,3 +93,14 @@ export const ToggleButton = styled.button<{ transparent: boolean }>`
     display: block;
   }
 `;
+
+export const LanguageText = styled.span<{ transparent: boolean }>`
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.TEXT_COLOR)};
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    display: none;
+  }
+`;
