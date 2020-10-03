@@ -15,7 +15,7 @@ export default styled.nav<{ transparent: boolean }>`
   display: flex;
   align-items: center;
   padding: 0 ${Spacing.SIZE_13};
-  z-index: 2;
+  z-index: 3;
   &[data-transparent='false'] {
     animation: ${({ theme }) => backgroundFadeIn(theme.WHITE)} 0.35s ease-in-out 0s 1;
     background-color: ${({ theme }) => theme.WHITE};

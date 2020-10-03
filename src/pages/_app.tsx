@@ -6,6 +6,7 @@ import Header from 'shared/components/Header';
 import Footer from 'shared/components/Footer';
 import { GlobalStyles } from 'styles/global-style';
 import { appWithTranslation } from 'shared/utils/internationalization';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 type AppComponent = FC<AppProps> & { getInitialProps: (appContext: AppContext) => Promise<any> };
 
