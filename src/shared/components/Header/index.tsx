@@ -1,13 +1,16 @@
 import React, { useState, useEffect, FC } from 'react';
-import HeaderContainer, { Brand, BookCallButton, ToggleButton } from './styles';
+import HeaderContainer, { Brand, BookCallButton, ToggleButton, LanguageText } from './styles';
 import Navbar from '../Navbar';
 import MobileNavbar from '../MobileNavbar';
 import { useTranslation } from 'shared/utils/internationalization';
+import useToggleLanguage from 'shared/hooks/useToggleLanguage';
 
 const Header: FC = () => {
   const { t } = useTranslation('common');
+  const { currentLangLabel, handleToggleLanguage } = useToggleLanguage();
   const [isTransparent, setIsTransparent] = useState(true);
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
+
   useEffect(() => {
     document.addEventListener('scroll', setTransparency);
     return () => {
@@ -19,7 +22,7 @@ const Header: FC = () => {
     setIsTransparent(isScrolled);
   }
   function handleMobileToggled() {
-    setIsMobileNavVisible((prev) => !prev);
+    setIsMobileNavVisible(prev => !prev);
   }
   return (
     <HeaderContainer transparent={isTransparent} data-transparent={isTransparent}>
@@ -27,6 +30,9 @@ const Header: FC = () => {
       <MobileNavbar visible={isMobileNavVisible} onToggle={handleMobileToggled} />
       <Navbar transparent={isTransparent} />
       <BookCallButton transparent={isTransparent}>{t('nav.bookACall')}</BookCallButton>
+      <LanguageText transparent={isTransparent} onClick={handleToggleLanguage}>
+        {currentLangLabel}
+      </LanguageText>
       <ToggleButton transparent={isTransparent} onClick={handleMobileToggled}>
         <span />
         <span />

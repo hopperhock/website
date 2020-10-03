@@ -65,6 +65,8 @@ export const Brand = styled(HopperhockLogo)`
 `;
 
 export const MobileNavFooter = styled.div`
+  display: flex;
+  flex-direction: column;
   color: ${({ theme }) => theme.TEXT_COLOR};
   margin: auto ${Margin.SIZE_2};
   text-align: center;
@@ -76,6 +78,15 @@ export const MobileNavFooter = styled.div`
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     font-weight: ${FontWeight.bold};
   }
+`;
+
+export const LanguageText = styled.span`
+  display: flex;
+  align-self: center;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: ${Margin.SIZE_3};
+  color: ${({ theme }) => theme.TEXT_COLOR};
 `;
 
 export default MobileNav;

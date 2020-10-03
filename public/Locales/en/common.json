@@ -4,7 +4,8 @@
     "services": "Services",
     "aboutUs": "About us",
     "contactUs": "Contact us",
-    "bookACall": "BOOK A CALL"
+    "bookACall": "BOOK A CALL",
+    "description": "Are you interested in having a conversation with us?"
   },
   "footer": {
     "copyright": "All rights reserved.",
