@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Breakpoints } from 'styles/utilities/breakpoints';
-import { Title, FontWeight, Subtitle, TextBody } from 'styles/utilities/font-sizes';
+import { Title, Subtitle, TextBody } from 'styles/utilities/font-sizes';
 import { Margin } from 'styles/utilities/gutters';
 
 export default styled.div`
@@ -26,7 +26,7 @@ export default styled.div`
 export const NearshoreHeading = styled.div`
   color: ${({ theme }) => theme.SECONDARY_COLOR_DARK_5};
   font-size: ${Title.SIZE_4};
-  max-width: 29ch;
+  max-width: 31ch;
   span {
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     font-family: roboto bold;
