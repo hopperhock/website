@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.4.0",
+    "formik": "^2.1.5",
     "next": "9.4.2",
     "next-i18next": "^6.0.2",
     "react": "16.13.1",

@@ -1,40 +1,59 @@
+import { Field } from 'formik';
 import { Margin } from './../../../styles/utilities/gutters';
 import styled from 'styled-components';
-import { FontWeight } from 'styles/utilities/font-sizes';
+import { FontWeight, TextBody, Title } from 'styles/utilities/font-sizes';
 import { Padding } from 'styles/utilities/gutters';
 import { Images } from 'shared/constants/assets';
+import { hexToRGB } from 'styles/utilities/funtions';
+import { title } from 'process';
 
 export const Container = styled.div`
-  padding: ${Padding.SIZE_4};
+  padding: ${Padding.SIZE_1};
   flex: auto;
   background: url(${Images.CONTACT_US_FORM}) no-repeat;
   background-size: cover;
   h1 {
+    font-size: ${Title.SIZE_5};
     font-family: 'roboto light';
-    margin-top: 30%;
+    margin-top: 22%;
     text-align: center;
-    color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_2};
+    color: ${({ theme }) => theme.WHITE};
   }
 `;
 
-export const Form = styled.form`
-  margin-top: ${Margin.SIZE_5};
+export const ContactUs = styled.div`
+  margin-top: ${Margin.SIZE_7};
   display: flex;
   flex-flow: column;
   align-items: center;
-
-  input,
+  > label {
+    margin-top: ${Margin.SIZE_5};
+    align-self: flex-start;
+    margin-left: 20%;
+    color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
+    font-family: 'roboto light';
+    font-size: ${TextBody.SIZE_2};
+    > span {
+      color: ${({ theme }) => theme.SECONDARY_COLOR_DARK_1};
+      font-weight: bold;
+      top: 200px;
+    }
+  }
+  > input,
   textarea {
+    font-family: 'roboto light';
+    background: ${({ theme }) => hexToRGB(theme.BLACK, '0')};
     width: 60%;
-    border: 1px solid ${({ theme }) => theme.WHITE};
-    margin: ${Margin.SIZE_1};
+    border: none;
+    border-bottom: 0.1px solid ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
+    outline: none;
     height: 35px;
-    color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_5};
+    color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     padding-left: 10px;
     ::placeholder {
       font-family: roboto, Helvetica, sans-serif;
       font-weight: ${FontWeight.light};
-      color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_4};
+      color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_1};
       opacity: 1; /* Firefox */
     }
   }
@@ -42,11 +61,11 @@ export const Form = styled.form`
     height: 100px;
     padding-top: 10px;
   }
-  Button {
-    width: 20%;
+  button {
+    width: 25%;
     border: none;
-    margin: 25px 0px 0px 40%;
-    height: 35px;
+    margin: 50px 0px 0px 35%;
+    height: 40px;
     background-color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     color: ${({ theme }) => theme.WHITE};
   }
