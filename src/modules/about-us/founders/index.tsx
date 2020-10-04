@@ -1,6 +1,7 @@
 import React, { FC, useContext, useEffect, useState } from 'react';
 import { CarouselContext } from 'pure-react-carousel';
 import { Images } from 'shared/constants/assets';
+import { Router } from 'shared/utils/internationalization';
 import Container, {
   ActionButton,
   Description,
@@ -76,7 +77,7 @@ const Founders: FC = () => {
           ))}
         </FounderList>
         <FounderDescription>{founders[currentSlide].description}</FounderDescription>
-        <ActionButton onClick={() => console.log('Foo')}>Book a Call</ActionButton>
+        <ActionButton onClick={() => Router.push('/contact-us')}>Book a Call</ActionButton>
       </Description>
     </Container>
   );
