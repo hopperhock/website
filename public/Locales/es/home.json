@@ -14,7 +14,7 @@
   },
   "services": {
     "title": "servicios que ofrecemos",
-    "subtitle": "¿Como podemos ayudarte?",
+    "subtitle": "¿Cómo podemos ayudarte?",
     "button": {
       "services": "NUESTROS SERVICIOS",
       "contact": "AGENDAR LLAMADA"
@@ -25,7 +25,7 @@
     },
     "qa": {
       "title": "Control de calidad",
-      "description": "Actualiza tu proyecto con las mejores practicas"
+      "description": "Actualiza tu proyecto con las mejores prácticas"
     },
     "ux": {
       "title": "UX/UI",
@@ -37,11 +37,11 @@
       "title": "Para tener proyectos exitosos es escencial: ",
       "description": "Talento, comunicación, retroalimentación, y una excelente cultura."
     },
-    "bold": "Esto es Hopperhock.",
+    "bold": "Somos HopperHock.",
     "button": "¡ HABLEMOS !"
   },
   "techstack": {
-    "title": "Algúnas de nuestras ",
-    "upper": "tecnologías"
+    "title": "Algúnas tecnologías de nuestro ",
+    "upper": "STACK"
   }
 }
