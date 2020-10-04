@@ -128,22 +128,25 @@ export const Description = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
+  padding: 0 5rem;
   padding-top: 10rem;
-  padding-left: 7.5rem;
   @media (max-width: ${Breakpoints.desktop}) {
+    padding: 0 2.5rem;
     padding-top: 5rem;
-    padding-left: 2.5rem;
   }
   @media (max-width: ${Breakpoints.tabletXL}) {
     height: auto;
     width: 100%;
-    padding: 4rem 3.5rem;
+    padding: 0 3.5rem;
+    padding-top: 4rem;
   }
   @media (max-width: ${Breakpoints.tablet}) {
-    padding: 3rem 2.5rem;
+    padding: 0 2.5rem;
+    padding-top: 3rem;
   }
   @media (max-width: ${Breakpoints.mobile}) {
-    padding: 3rem 1.5rem;
+    padding: 0 1.5rem;
+    padding-top: 3rem;
   }
 `;
 
@@ -168,9 +171,6 @@ export const FounderList = styled.div`
   flex-direction: row;
   justify-content: center;
   margin: 5rem 0;
-  @media (max-width: ${Breakpoints.desktop}) {
-    justify-content: flex-start;
-  }
   @media (max-width: ${Breakpoints.laptop}) {
     margin: 4rem 0;
   }
@@ -226,7 +226,6 @@ export const FounderDescription = styled.p`
   letter-spacing: 0.6px;
   color: #3a3a3a;
   margin: 0;
-  margin-right: 5rem;
   @media (max-width: ${Breakpoints.desktop}) {
     font-size: 22px;
   }
