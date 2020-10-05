@@ -1,8 +1,9 @@
 import React, { FC } from 'react';
 import { Container, HeaderTitle, WorkStepsContainer } from './styles';
-
 import { WORK_PROCESS_STEPS_EN, WORK_PROCESS_STEPS_ES, Images } from 'shared/constants/assets';
 import { useTranslation } from 'shared/utils/internationalization';
+
+let imagesLogos = true ? WORK_PROCESS_STEPS_EN : WORK_PROCESS_STEPS_ES; // TO DO Get language
 
 const WorkSteps: FC = () => {
   const { t } = useTranslation('services');

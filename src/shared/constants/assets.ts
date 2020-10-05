@@ -56,21 +56,21 @@ export const STACK_IMAGES = [
 ];
 
 export var WORK_PROCESS_STEPS_EN = [
-  'En-Process-1.png',
-  'En-Process-3.png',
-  'En-Process-5.png',
+  'EnProcess1.png',
+  'EnProcess3.png',
+  'EnProcess5.png',
   ,
-  'En-Process-2.png',
-  'En-Process-4.png',
+  'EnProcess2.png',
+  'EnProcess4.png',
 ];
 
 export var WORK_PROCESS_STEPS_ES = [
-  'Es-Process-1.png',
-  'Es-Process-3.png',
-  'Es-Process-5.png',
+  'EsProcess1.png',
+  'EsProcess3.png',
+  'EsProcess5.png',
   ,
-  'Es-Process-2.png',
-  'Es-Process-4.png',
+  'EsProcess2.png',
+  'EsProcess4.png',
 ];
 
 export var SOCIAL_NETWORK_ICONS = [
