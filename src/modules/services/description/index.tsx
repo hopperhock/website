@@ -4,6 +4,7 @@ import Container, {
   StaffAugmentation,
   LineSeparator,
   ServicesDescriptionBackgroundMobile,
+  ServicesExplanation,
 } from './styles';
 import { Images } from 'shared/constants/assets';
 import { useTranslation } from 'shared/utils/internationalization';
@@ -20,6 +21,17 @@ const ServicesDescription: FC = () => {
         <LineSeparator />
         <p>{t('description.content')}</p>
       </StaffAugmentation>
+      <ServicesExplanation>
+        <h2>
+          Custom Product & Software <span>Development ?</span>
+        </h2>
+        <LineSeparator />
+        <p>
+          In all our services, we ensure the final product fulfills your expectation. This is because since day one we
+          provide you an accompanying through every phase of development: Clear estimations, Demo sessions, Mocks,
+          flexible methodologies, and more.
+        </p>
+      </ServicesExplanation>
     </Container>
   );
 };
