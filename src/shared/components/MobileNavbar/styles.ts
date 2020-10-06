@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { HopperhockLogo } from 'styles/illustrations/HopperhockLogo';
 import { Margin, Padding } from 'styles/utilities/gutters';
-import { TextBody, FontWeight } from 'styles/utilities/font-sizes';
+import { TextBody, FontWeight, Subtitle } from 'styles/utilities/font-sizes';
 import { slideIn, slideOut } from 'styles/utilities/animations';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
@@ -37,10 +37,10 @@ const MobileNav = styled.div<Props>`
   }
   li {
     width: 100%;
-    padding: ${Padding.SIZE_5} 0;
+    padding: ${Padding.SIZE_8} 0;
     border-bottom: 1px solid ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_2};
     text-align: center;
-    font-size: ${TextBody.SIZE_3};
+    font-size: ${Subtitle.SIZE_1};
     font-weight: ${FontWeight.medium};
     text-decoration: none;
     color: ${({ theme }) => theme.TEXT_COLOR};
@@ -51,16 +51,33 @@ const MobileNav = styled.div<Props>`
       background-color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_1};
     }
   }
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.tabletXL}) {
     display: flex;
+  }
+  @media (max-width: ${Breakpoints.tablet}) {
+    li {
+      padding: ${Padding.SIZE_5} 0;
+      font-size: ${TextBody.SIZE_1};
+    }
+  }
+  @media (max-width: ${Breakpoints.mobile}) {
+    li {
+      font-size: ${TextBody.SIZE_3};
+    }
   }
 `;
 
 export const Brand = styled(HopperhockLogo)`
-  height: 85px;
+  height: 155px;
   margin-top: ${Margin.SIZE_2};
   path {
     fill: ${({ theme }) => theme.TEXT_COLOR};
+  }
+  @media (max-width: ${Breakpoints.mobile}) {
+    height: 125px;
+  }
+  @media (max-width: ${Breakpoints.mobile}) {
+    height: 85px;
   }
 `;
 
@@ -71,12 +88,19 @@ export const MobileNavFooter = styled.div`
   margin: auto ${Margin.SIZE_2};
   text-align: center;
   letter-spacing: 1px;
-  line-height: 25px;
-  font-size: ${TextBody.SIZE_3};
+  line-height: 38px;
+  font-size: ${Subtitle.SIZE_1};
   a {
     text-decoration: none;
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     font-weight: ${FontWeight.bold};
+  }
+  @media (max-width: ${Breakpoints.tablet}) {
+    line-height: 25px;
+    font-size: ${TextBody.SIZE_1};
+  }
+  @media (max-width: ${Breakpoints.mobile}) {
+    font-size: ${TextBody.SIZE_3};
   }
 `;
 
