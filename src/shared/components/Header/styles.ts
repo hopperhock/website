@@ -117,7 +117,7 @@ export const LanguageText = styled.span<{ transparent: boolean }>`
   text-decoration: underline;
   color: ${({ theme, transparent }) => (transparent ? theme.NAVIGATION_TEXT_COLOR : theme.TEXT_COLOR)};
 
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.tabletXL}) {
     display: none;
   }
 `;
