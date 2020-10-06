@@ -26,6 +26,10 @@ const Header: FC = () => {
   }
   return (
     <HeaderContainer transparent={isTransparent} data-transparent={isTransparent}>
+      <head>
+        <title>HopperHock - Improve, Grown & Innovate</title>
+        <link rel="icon" href="/static/favicon.ico" />
+      </head>
       <Brand transparent={isTransparent} />
       <MobileNavbar visible={isMobileNavVisible} onToggle={handleMobileToggled} />
       <Navbar transparent={isTransparent} />
