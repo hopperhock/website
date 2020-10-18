@@ -43,17 +43,16 @@ export const ParallaxBannerImage = styled.div<{ bannerImageSource: string }>`
 
 export const ParallaxContainer = styled.div<{ bannerContainerSource: string }>`
 ${baseParallaxBannerStyles}
-  background-image: url(${({ bannerContainerSource }) => bannerContainerSource});
-  height: 45rem;
+background-image: url(${({ bannerContainerSource }) => bannerContainerSource});
+  min-height: 45rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  
 `;
 
 export const ParallaxTextDisplayer = styled.span`
   ${baseParallaxTextDisplayer}
+  margin-top: 12rem;
   font-family: "Roboto Light Italic", helvetica;
 `;
 
