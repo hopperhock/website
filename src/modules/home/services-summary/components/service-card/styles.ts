@@ -15,7 +15,7 @@ export const ServiceTitle = styled.p`
   text-align: center;
   vertical-align: bottom;
   margin: 6rem auto;
-  transition: all 2s;
+  transition: all 0.8s;
   @media (max-width: ${Breakpoints.mobile}) {
     font-size: 2.375rem;
     line-height: 1.40625rem;
@@ -27,7 +27,7 @@ export const ServicesDivider = styled.hr`
   height: 0.125rem;
   width: 80%;
   display: none;
-  transition: all 2s;
+  transition: all 0.8s;
 `;
 
 export const CardDescriptioner = styled.p`
@@ -44,7 +44,7 @@ export const CardDescriptioner = styled.p`
 `;
 
 export const ButtonContainer = styled.div`
-  transition-delay: 0s;
+  transition-delay: 0.1s;
   position: absolute;
   width: 100%;
   visibility: hidden;
@@ -80,11 +80,11 @@ export const Containers = styled.div`
   }
   &:hover ${CardDescriptioner} {
     opacity: 1;
-    transition: opacity 5s;
+    transition: opacity 2s;
   }
   &:hover ${ButtonContainer} {
-    transition: visibility 10s linear, opacity 10s linear;
-    transition-delay: 0.3s;
+    transition: visibility 1s linear, opacity 1s linear;
+    transition-delay: 0.1s;
     visibility: visible;
     opacity: 1;
   }

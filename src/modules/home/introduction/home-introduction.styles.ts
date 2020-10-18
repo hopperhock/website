@@ -36,6 +36,7 @@ export const HomeIntroVideo = styled.video`
   top: 50%;
   left: 50%;
   min-height: 100%;
+  min-width: 100%;
   overflow: hidden;
   z-index: -1;
   -webkit-transform: translateX(-50%) translateY(-50%);
