@@ -34,7 +34,7 @@ export const ChangeColorContainer = styled.div`
 export const CardContainer = styled.div`
   min-width: 31.25rem;
   margin: 4rem 1rem;
-  transition: all 2s;
+  transition: all 1s;
   &:nth-child(3) {
     margin-bottom: 1000px;
     color: red !important;

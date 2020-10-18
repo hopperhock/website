@@ -12,7 +12,7 @@ export const GenericButton = styled.button<{
   fontSize: string;
 }>`
   background-color: ${props => (props.isOutline ? 'transparent' : props.color)};
-  border: ${props => (props.isOutline ? `2px solid ${props.color}` : '0')};
+  border: ${props => (props.isOutline ? `1px solid ${props.color}` : '0')};
   color: ${({ textColor }) => textColor};
   cursor: pointer;
   font-size: ${({ fontSize }) => fontSize};
