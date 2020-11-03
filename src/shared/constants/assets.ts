@@ -19,6 +19,10 @@ export enum Images {
   STACK_IMAGES_BASE_URL = '/Images/StackImages/',
   WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/',
   ABOUT_US_INTRODUCTION = '/Images/AboutUs/Introduction/AboutUsIntroduction.svg',
+  FOUNDER_1 = '/Images/AboutUs/Founders/Founder1.jpg',
+  FOUNDER_2 = '/Images/AboutUs/Founders/Founder2.jpg',
+  FOUNDER_3 = '/Images/AboutUs/Founders/Founder3.jpg',
+  FOUNDER_ICON = '/Images/AboutUs/Founders/UserIcon.svg',
   CB_DESKTOP = '/Images/Services/Capabilities/desktop.svg',
   CB_WEB = '/Images/Services/Capabilities/web.svg',
   CB_MOBILE = '/Images/Services/Capabilities/mobile.svg',
@@ -27,9 +31,13 @@ export enum Images {
   CB_QA = '/Images/Services/Capabilities/qa.svg',
   CONTACT_US_BANNER = '/Images/ContactUs/ContactUsbanner.png',
   CONTACT_US_FORM = '/Images/ContactUs/ContactUsForm.png',
+  SOCIAL_IMAGES_BASE_URL = '/Images/SocialImages/',
+  FOOTER_BACKGROUND = '/Images/FooterBackgroundImage.png',
+  FOOTER_SOCIAL_BACKGROUND = '/Images/FooterSocialBackgroundImage.png',
+  BRAND_WHITE = '/Images/BrandWhite.png',
 }
 
-export var STACK_IMAGES = [
+export const STACK_IMAGES = [
   'dotnet.svg',
   'java.svg',
   'spring.svg',
@@ -47,11 +55,34 @@ export var STACK_IMAGES = [
   'aws.svg',
 ];
 
-export var WORK_PROCESS_STEPS = ['Process 1.png', 'Process 3.png', 'Process 5.png', , 'Process 2.png', 'Process 4.png'];
+export var WORK_PROCESS_STEPS_EN = [
+  'EnProcess1.png',
+  'EnProcess3.png',
+  'EnProcess5.png',
+  ,
+  'EnProcess2.png',
+  'EnProcess4.png',
+];
+
+export var WORK_PROCESS_STEPS_ES = [
+  'EsProcess1.png',
+  'EsProcess3.png',
+  'EsProcess5.png',
+  ,
+  'EsProcess2.png',
+  'EsProcess4.png',
+];
 
 export var SOCIAL_NETWORK_ICONS = [
   { url: 'http://www.facebook.com', image: '/Images/facebook.svg' },
   { url: 'http://www.twitter.com', image: '/Images/twitter.svg' },
   { url: 'http://www.instagram.com', image: '/Images/instagram.svg' },
   { url: 'http://www.linkedin.com', image: '/Images/linkedin.svg' },
+];
+
+export const SOCIAL_IMAGES = [
+  'twitter.svg',
+  'facebook.svg',
+  'instagram.svg',
+  'linkedin.svg'
 ];

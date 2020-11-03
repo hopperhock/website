@@ -1,13 +1,14 @@
-import App from 'next/app';
-import { AppProps } from 'next/app';
+import App, { AppProps, AppContext  } from 'next/app';
 import { FC, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { THEME } from 'styles/theme';
 import Header from 'shared/components/Header';
+import Footer from 'shared/components/Footer';
 import { GlobalStyles } from 'styles/global-style';
 import { appWithTranslation } from 'shared/utils/internationalization';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-type AppComponent = FC<AppProps> & { getInitialProps: (appContext: any) => Promise<any> };
+type AppComponent = FC<AppProps> & { getInitialProps: (appContext: AppContext) => Promise<any> };
 
 const MyApp: AppComponent = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const MyApp: AppComponent = ({ Component, pageProps }) => {
       <GlobalStyles />
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 };

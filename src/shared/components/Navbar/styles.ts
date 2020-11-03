@@ -10,12 +10,9 @@ export const NavLinks = styled.ul`
   align-items: center;
   margin: 0 ${Margin.SIZE_13};
   @media (max-width: ${Breakpoints.desktop}) {
-    margin: 0 ${Margin.SIZE_8};
+    margin: 0 ${Margin.SIZE_9};
   }
-  @media (max-width: ${Breakpoints.tablet}) {
-    margin: 0 ${Margin.SIZE_6};
-  }
-  @media (max-width: ${Breakpoints.mobile}) {
+  @media (max-width: ${Breakpoints.tabletXL}) {
     display: none;
   }
 `;
@@ -35,13 +32,10 @@ export const NavLink = styled.a<{ transparent: boolean }>`
     border-top: 1px solid ${({ theme, transparent }) => (transparent ? theme.WHITE : theme.PRIMARY_COLOR_DARK_3)};
   }
   @media (max-width: ${Breakpoints.desktop}) {
-    font-size: ${TextBody.SIZE_3};
-    padding: 0 ${Padding.SIZE_4};
+    padding: 0 ${Padding.SIZE_5};
   }
-  @media (max-width: ${Breakpoints.laptop}) {
-    font-size: ${TextBody.SIZE_1};
-  }
-  @media (max-width: ${Breakpoints.tablet}) {
+  @media (max-width: ${Breakpoints.tabletXL}) {
     padding: 0 ${Padding.SIZE_3};
+    font-size: ${TextBody.SIZE_2};
   }
 `;

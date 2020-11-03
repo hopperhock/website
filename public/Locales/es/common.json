@@ -1,1 +1,41 @@
-{}
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "aboutUs": "Nosotros",
+    "contactUs": "Contacto",
+    "bookACall": "AGENDAR UNA LLAMADA",
+    "description": "¿Estás interesado en conversar con nosotros?"
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados.",
+    "left": {
+      "wantTalkAbout": "¿Quieres hablar sobre un proyecto?",
+      "scheduleCall": "¡AGENDEMOS UNA LLAMADA!",
+      "address": {
+        "label": "Dirección: ",
+        "value": " Lorem isumitem here"
+      },
+      "phone": {
+        "label": "Teléfono: "
+      },
+      "email": {
+        "label": "Correo: "
+      }
+    },
+    "right": {
+      "global": {
+        "title": "Global",
+        "subTitle": "Mira nuestros servicios"
+      },
+      "dev": {
+        "title": "Desarrollo",
+        "subTitle": "Háblanos, ayudanos a mejorar tu negocio."
+      },
+      "design": {
+        "title": "Diseño",
+        "subTitle": "¿Creando un MVP? Contáctanos"
+      }
+    }
+  }
+}

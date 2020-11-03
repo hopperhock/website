@@ -1,0 +1,21 @@
+{
+  "information": {
+    "title": "Let's make something awesome.",
+    "contactTitle": "How to reach us",
+    "phone": "+506 6086 2334",
+    "email": "contact@hopperhock.com",
+    "addressTitle": "Where we are",
+    "connectTitle": "connect",
+    "address": "16 ST, Ave 20, San Jose, Costa Rica 10103."
+  },
+  "form": {
+    "title": "What can we help you with ?",
+    "confirm": "Send",
+    "placeholder": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "description": "Project Description"
+    }
+  }
+}

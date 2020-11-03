@@ -40,3 +40,26 @@ export const slideOut = keyframes`
     transform: translate3d(-100%, 0, 0);
   }
 `;
+
+// bob animation
+export const bobAnimation = (color: string) => keyframes`
+ 0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-18px);
+  }
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-18px);
+  }
+`;
+
+export const bobFloat = (color: string) => keyframes`
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+`;

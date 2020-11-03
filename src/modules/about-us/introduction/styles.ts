@@ -9,6 +9,7 @@ export default styled.div`
   width: 100vw;
   background: url(${Images.ABOUT_US_INTRODUCTION}) center center no-repeat;
   background-size: cover;
+  z-index: 2;
 `;
 
 export const AboutUsIntroductionHeader = styled.div`

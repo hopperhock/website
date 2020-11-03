@@ -1,5 +1,4 @@
-import React, { FC, useCallback } from 'react';
-import Router from 'next/router';
+import React, { FC } from 'react';
 import Button from '../Button/index';
 import { Globals, BlueGrey } from 'styles/utilities/colors';
 import {
@@ -9,27 +8,30 @@ import {
   ParallaxBoldTextDisplayer,
   Container
 } from './styles';
-import * as translations from './Translations/en.json';
+import { useTranslation } from 'shared/utils/internationalization';
 
 type IParallaxBannerProps = {
   bannerImage: string;
   bannerContainer: string;
 };
 
+const BUTTON_WIDTH = '30%';
+
 const ParallaxBanner: FC<IParallaxBannerProps> = ({ bannerImage, bannerContainer }) => {
-  const BUTTON_WIDTH = '30%';
+  const { t } = useTranslation('home');
+
   return (
     <Container>
       <ParallaxBannerImage bannerImageSource={bannerImage}>
         <ParallaxContainer bannerContainerSource={bannerContainer}>
           <ParallaxTextDisplayer>
-            {translations['home.banner.label.title']}
+            {t('banner.label.title')}
             <br></br>
-            {translations['home.banner.label.description']}
-            <ParallaxBoldTextDisplayer>{translations['home.banner.bold.label']}</ParallaxBoldTextDisplayer>
+            {t('banner.label.description')}
+            <ParallaxBoldTextDisplayer>{t('banner.bold')}</ParallaxBoldTextDisplayer>
           </ParallaxTextDisplayer>
           <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction="about-us" width={BUTTON_WIDTH}>
-            {translations['home.banner.button.label']}
+            {t('banner.button')}
           </Button>
         </ParallaxContainer>
       </ParallaxBannerImage>

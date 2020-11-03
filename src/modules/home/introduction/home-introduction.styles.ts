@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 import { hexToRGB } from 'styles/utilities/funtions';
 import { Title, Subtitle, TextBody } from 'styles/utilities/font-sizes';
-import { Margin } from 'styles/utilities/gutters';
 import { Images } from 'shared/constants/assets';
 
 export const HomeIntroContainer = styled.div`

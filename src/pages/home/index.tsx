@@ -17,10 +17,6 @@ const Container = styled.div`
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>HopperHock - Improve, Grown & Innovate</title>
-        <link rel="icon" href="/static/favicon.ico" />
-      </Head>
       <Container>
         <HomeIntroduction />
         <ServicesSummary />
@@ -36,7 +32,7 @@ const Home: NextPage = () => {
 };
 
 Home.getInitialProps = () => ({
-  namespacesRequired: ['header'],
+  namespacesRequired: ['common', 'home'],
 });
 
 export default Home;

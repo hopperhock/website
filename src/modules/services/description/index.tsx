@@ -3,23 +3,35 @@ import Container, {
   MainBackground,
   StaffAugmentation,
   LineSeparator,
-  ServicesDescriptionBackgroundMobile
+  ServicesDescriptionBackgroundMobile,
+  ServicesExplanation,
 } from './styles';
 import { Images } from 'shared/constants/assets';
+import { useTranslation } from 'shared/utils/internationalization';
 
 const ServicesDescription: FC = () => {
+  const { t } = useTranslation('services');
+
   return (
     <Container>
       <MainBackground />
       <ServicesDescriptionBackgroundMobile src={Images.SERVICES_DESCRIPTION_MOBILE} alt="Services Background" />
       <StaffAugmentation>
-        Technical <br /> Staff <span>Augmentation</span>
+        {t('description.tech')} <br /> {t('description.staff')} <span>{t('description.augmentation')}</span>
+        <LineSeparator />
+        <p>{t('description.content')}</p>
+      </StaffAugmentation>
+      <ServicesExplanation>
+        <h2>
+          Custom Product & Software <span>Development ?</span>
+        </h2>
         <LineSeparator />
         <p>
-          HopperHock cares about the standard, great practices and excellent technical skills. We guarantee a great
-          place that really contributes to your team and your business.
+          In all our services, we ensure the final product fulfills your expectation. This is because since day one we
+          provide you an accompanying through every phase of development: Clear estimations, Demo sessions, Mocks,
+          flexible methodologies, and more.
         </p>
-      </StaffAugmentation>
+      </ServicesExplanation>
     </Container>
   );
 };
