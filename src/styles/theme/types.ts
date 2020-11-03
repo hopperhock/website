@@ -31,6 +31,8 @@ export type Theme = {
   TERTIARY_COLOR_LIGHT_5: string;
   BLACK: string;
   WHITE: string;
+  GREY: string;
+  RED: string;
   SUCCESS: string;
   WARNING: string;
   ERROR: string;

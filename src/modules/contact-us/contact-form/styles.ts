@@ -1,3 +1,4 @@
+import { Red } from './../../../styles/utilities/colors';
 import { Field } from 'formik';
 import { Margin } from './../../../styles/utilities/gutters';
 import styled from 'styled-components';
@@ -27,14 +28,13 @@ export const ContactUs = styled.div`
   flex-flow: column;
   align-items: center;
   > label {
-    margin-top: ${Margin.SIZE_5};
+    margin: ${Margin.SIZE_2} ${Margin.SIZE_0} ${Margin.SIZE_1} 20%;
     align-self: flex-start;
-    margin-left: 20%;
-    color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
+    color: ${({ theme }) => theme.BLACK};
     font-family: 'roboto light';
     font-size: ${TextBody.SIZE_2};
     > span {
-      color: ${({ theme }) => theme.SECONDARY_COLOR_DARK_1};
+      color: ${({ theme }) => theme.RED};
       font-weight: bold;
       top: 200px;
     }
@@ -42,11 +42,9 @@ export const ContactUs = styled.div`
   > input,
   textarea {
     font-family: 'roboto light';
-    background: ${({ theme }) => hexToRGB(theme.BLACK, '0')};
+    background: white;
     width: 60%;
-    border: none;
-    border-bottom: 0.1px solid ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
-    outline: none;
+    border: 0.1px solid ${({ theme }) => theme.GREY};;
     height: 35px;
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
     padding-left: 10px;

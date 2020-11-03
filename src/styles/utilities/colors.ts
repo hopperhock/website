@@ -47,7 +47,8 @@ export enum Red {
   LIGHT_4 = '#E66A6A',
   LIGHT_3 = '#F29B9B',
   LIGHT_2 = '#FACDCD',
-  LIGHT_1 = '#FFEEEE'
+  LIGHT_1 = '#FFEEEE',
+
 }
 
 export enum Yellow {
@@ -65,7 +66,9 @@ export enum Yellow {
 
 export enum Globals {
   BLACK = '#000000',
-  WHITE = '#FFFFFF'
+  WHITE = '#FFFFFF',
+  GREY = '#808080',
+  RED = '#FF0000'
 }
 
 export enum Alternatives {

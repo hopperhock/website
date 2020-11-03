@@ -34,6 +34,8 @@ export const THEME: Theme = {
   TERTIARY_COLOR_LIGHT_5: Teal.LIGHT_5,
   BLACK: Globals.BLACK,
   WHITE: Globals.WHITE,
+  GREY: Globals.GREY,
+  RED: Globals.RED,
   SUCCESS: Teal.DARK_3,
   ERROR: Red.DARK_3,
   WARNING: Yellow.DARK_3,
