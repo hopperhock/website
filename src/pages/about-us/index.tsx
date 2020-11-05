@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { CarouselProvider } from 'pure-react-carousel';
 import AboutUsIntroduction from 'modules/about-us/introduction';
 import Founders from 'modules/about-us/founders';
+import CoreValues from 'modules/about-us/core-values';
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ const AboutUs: NextPage = () => {
         infinite={true}
       >
         <Founders />
+        <CoreValues />
       </CarouselContainer>
     </Container>
   );

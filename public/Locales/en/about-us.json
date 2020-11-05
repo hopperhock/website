@@ -3,5 +3,34 @@
     "title": "Who we are",
     "sub-title": "Improvers, Collaborators & ",
     "sub-title-designers": "Solution Designers."
+  },
+  "core-values": {
+    "title": ["WE REALLY CARE", "About values", "& Culture"],
+    "values": [
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      },
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      },
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      },
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      },
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      },
+      {
+        "title": "AUTHENTICY",
+        "content": "Compare Prices Find The Best Computer Accessory"
+      }
+    ]
   }
 }
