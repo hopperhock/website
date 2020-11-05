@@ -3,5 +3,34 @@
     "title": "Quiénes somos",
     "sub-title": "Innovadores, Colaboradores y",
     "sub-title-designers": "Diseñadores de Soluciones."
+  },
+  "core-values": {
+    "title": ["NOS PREOCUPAMOS", "por nuestros valores", "y cultura"],
+    "values": [
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      },
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      },
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      },
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      },
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      },
+      {
+        "title": "AUTENTICIDAD",
+        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+      }
+    ]
   }
 }
