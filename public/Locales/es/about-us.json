@@ -8,29 +8,48 @@
     "title": ["NOS PREOCUPAMOS", "por nuestros valores", "y cultura"],
     "values": [
       {
-        "title": "AUTENTICIDAD",
-        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+        "title": "Colaboración",
+        "content": "La colaboración entre nuestros equipos de desarrollo y el intercambio de experiencias y conocimientos para cada miembro promueve una gran cultura y un lugar increíble para trabajar."
       },
       {
-        "title": "AUTENTICIDAD",
-        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+        "title": "Comunicación",
+        "content": "Nuestra comunicación constante entre nuestros equipos y clientes garantiza un software que cumple con todos los requisitos y le proporciona un extra al sistema."
       },
       {
-        "title": "AUTENTICIDAD",
-        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+        "title": "Calidad",
+        "content": "Buscamos alternativas y evaluamos las mejores opciones para resolver sus necesidades bajo calidad con los mejores estándares de software."
       },
       {
-        "title": "AUTENTICIDAD",
-        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+        "title": "Mejora continua",
+        "content": "Preferimos salirnos de la zona de confort, por eso promovemos la mejora constante y la capacitación en nuestros equipos."
       },
       {
-        "title": "AUTENTICIDAD",
-        "content": "Compara precios y encuentra los mejores accesorios de computadoras"
+        "title": "Cultura",
+        "content": "Creemos que si asume nuestros valores junto a las personas que lo rodean, la pasión y un exelente equipo de trabajo aparecerán junto con una calidad inigualable"
       },
       {
         "title": "AUTENTICIDAD",
         "content": "Compara precios y encuentra los mejores accesorios de computadoras"
       }
     ]
+  },
+  "founders": {
+    "left-title": "NUESTRO EQUIPO",
+    "right-title": ["CONOCE", "Los fundadores"],
+    "Andrés": {
+      "name": "Andrés Matta",
+      "position": "Co-Fundador",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    "Dalmiro": {
+      "name": "Dalmiro Huete",
+      "position": "Co-Fundador",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    "Hersey": {
+      "name": "Hersey Aguilar",
+      "position": "Co-FoFundadorunder",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    }
   }
 }

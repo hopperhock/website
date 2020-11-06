@@ -8,29 +8,48 @@
     "title": ["WE REALLY CARE", "About values", "& Culture"],
     "values": [
       {
-        "title": "AUTHENTICY",
-        "content": "Compare Prices Find The Best Computer Accessory"
+        "title": "Collaboration",
+        "content": "The collaboration between our development teams and the sharing of experiences and knowledge for every member promotes a great culture and amazing place to work."
       },
       {
-        "title": "AUTHENTICY",
-        "content": "Compare Prices Find The Best Computer Accessory"
+        "title": "Communication",
+        "content": "Our constant communication between our teams and clients ensures software that fulfills all the requirements and provides you the extra mile."
       },
       {
-        "title": "AUTHENTICY",
-        "content": "Compare Prices Find The Best Computer Accessory"
+        "title": "Quality",
+        "content": "We look for alternatives and evaluate the best options to resolve your needs under quality with the best software standards."
       },
       {
-        "title": "AUTHENTICY",
-        "content": "Compare Prices Find The Best Computer Accessory"
+        "title": "Improvement",
+        "content": "We prefer to go out of the comfort zone, this is why we promote the constants improvement and capacitation in our teams."
       },
       {
-        "title": "AUTHENTICY",
-        "content": "Compare Prices Find The Best Computer Accessory"
+        "title": "Love and culture",
+        "content": "We believe that if you assume ownership with our values and the people around you the passion and the great work will appear."
       },
       {
         "title": "AUTHENTICY",
         "content": "Compare Prices Find The Best Computer Accessory"
       }
     ]
+  },
+  "founders": {
+    "left-title": "MEET OUR TEAM",
+    "right-title": ["MEET", "The Founders"],
+    "Andrés": {
+      "name": "Andrés Matta",
+      "position": "Co-Founder",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    "Dalmiro": {
+      "name": "Dalmiro Huete",
+      "position": "Co-Founder",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    },
+    "Hersey": {
+      "name": "Hersey Aguilar",
+      "position": "Co-Founder",
+      "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+    }
   }
 }
