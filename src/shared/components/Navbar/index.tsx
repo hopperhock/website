@@ -1,14 +1,13 @@
 import React, { FC } from 'react';
 import { NavLink, NavLinks } from './styles';
-import Link from 'next/link';
-import { useTranslation } from 'shared/utils/internationalization';
+import { Link, useTranslation } from 'shared/utils/internationalization';
 
 type Props = {
   transparent: boolean;
 };
 
 const Navbar: FC<Props> = ({ transparent }) => {
-  const { t } = useTranslation('common')
+  const { t } = useTranslation('common');
 
   return (
     <NavLinks>

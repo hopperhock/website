@@ -1,6 +1,9 @@
 const { nextI18NextRewrites } = require('next-i18next/rewrites');
 
-const localeSubpaths = {}; //TODO: Add local subpaths, see https://github.com/isaachinman/next-i18next/issues/824
+const localeSubpaths = {
+  en: 'en',
+  es: 'es',
+}; //TODO: Add local subpaths, see https://github.com/isaachinman/next-i18next/issues/824
 
 module.exports = {
   rewrites: async () => nextI18NextRewrites(localeSubpaths),

@@ -1,4 +1,5 @@
 import React, { useState, useEffect, FC } from 'react';
+import NextHead from 'next/head';
 import HeaderContainer, { Brand, BookCallButton, ToggleButton, LanguageText } from './styles';
 import Navbar from '../Navbar';
 import MobileNavbar from '../MobileNavbar';
@@ -26,10 +27,10 @@ const Header: FC = () => {
   }
   return (
     <HeaderContainer transparent={isTransparent} data-transparent={isTransparent}>
-      <head>
+      <NextHead>
         <title>HopperHock - Improve, Grown & Innovate</title>
         <link rel="icon" href="/static/favicon.ico" />
-      </head>
+      </NextHead>
       <Brand transparent={isTransparent} />
       <MobileNavbar visible={isMobileNavVisible} onToggle={handleMobileToggled} />
       <Navbar transparent={isTransparent} />

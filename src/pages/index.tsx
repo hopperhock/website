@@ -10,4 +10,8 @@ const RootPage = () => {
   return null;
 };
 
+RootPage.getInitialProps = async () => ({
+  namespacesRequired: ['common', 'home'],
+});
+
 export default RootPage;
