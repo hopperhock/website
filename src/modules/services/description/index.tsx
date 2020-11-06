@@ -23,13 +23,11 @@ const ServicesDescription: FC = () => {
       </StaffAugmentation>
       <ServicesExplanation>
         <h2>
-          Custom Product & Software <span>Development ?</span>
+          {t('custom-product.title.0')} <span>{t('custom-product.title.1')}</span>
         </h2>
         <LineSeparator />
         <p>
-          In all our services, we ensure the final product fulfills your expectation. This is because since day one we
-          provide you an accompanying through every phase of development: Clear estimations, Demo sessions, Mocks,
-          flexible methodologies, and more.
+        {t('custom-product.content')}
         </p>
       </ServicesExplanation>
     </Container>

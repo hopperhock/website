@@ -20,6 +20,10 @@
     "description": "Hacer realidad tus ideas.",
     "sub-description": "Mejorar + Crecer + Innovar"
   },
+  "custom-product": {
+    "title": ["Desarrollo de Software", "Personalizado?"],
+    "content": "En todos nuestros servicios, nos aseguramos de que el producto final cumpla con sus expectativas. Esto se debe a que desde el primer día te acompañamos en cada fase de desarrollo: estimaciones claras, sesiones de demostración, Mocks, metodologías flexibles y más."
+  },
   "how-we-work": {
     "title": "¿Cómo trabajamos?"
   }
