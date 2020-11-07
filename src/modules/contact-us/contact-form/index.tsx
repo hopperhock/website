@@ -1,33 +1,22 @@
 import React, { FC } from 'react';
 import { Container, ContactUs } from './styles';
 import { Formik, Field, Form } from 'formik';
-import * as tranlations from './Translations/en.json';
 import apiService from '../../../shared/utils/api-service/api-service';
-
-
-type ContactFormData = {
-  fullname: string,
-  email: string,
-  phone: number,
-  projectDescription: string,
-};
-
+import { useTranslation } from 'shared/utils/internationalization';
+import {SEND_CONTACT_US_DATA} from 'shared/utils/api-service/api-urls';
 
 const ContactForm: FC = () => {
-  
+  const { t } = useTranslation('contact-us');
   const sendContactInfo = async (values: any) => {
     try {
-      //await apiService.post('contact-us', values)
-      //alert('sucess');
-      console.log(process.env.HOPPERHOCK_API_KEY)
+      await apiService.post(SEND_CONTACT_US_DATA, values)
     } catch (err) {
-      alert('failed');
    }
   }
 
   return (
     <Container>
-      <h1>{tranlations['contact.form.title']}</h1>
+      <h1>{t('form.title')}</h1>
       <Formik
         initialValues={{ "fullname": "", "email": "", "phone": "", "projectDescription": "", }}
         onSubmit={async (values, { resetForm }) => {
@@ -38,24 +27,24 @@ const ContactForm: FC = () => {
         <Form>
           <ContactUs>
             <label htmlFor="fullname">
-              Full Name <span>*</span>
+            {t('form.placeholder.name')} <span>*</span>
             </label>
             <Field id="fullname" name="fullname" required />
 
             <label htmlFor="email">
-              Email <span>*</span>
+            {t('form.placeholder.email')} <span>*</span>
             </label>
             <Field id="email" name="email" type="email" required />
 
-            <label htmlFor="phone">Phone</label>
+            <label htmlFor="phone">{t('form.placeholder.phone')}</label>
             <Field id="phone" name="phone" type="number" />
 
             <label htmlFor="pasprojectDescriptionsword">
-              Message <span>*</span>
+            {t('form.placeholder.description')} <span>*</span>
             </label>
             <Field as="textarea" id="projectDescription" name="projectDescription" rows={20} required />
 
-            <button type="submit">Send</button>
+            <button type="submit">{t('form.confirm')}</button>
           </ContactUs>
         </Form>
       </Formik>
