@@ -1,41 +1,44 @@
 export const HOME_VIDEO = 'https://hopperhock-ui-assets.s3.amazonaws.com/videos/HopperHockVideo.mp4';
-export enum Images {
-  HOME_VIDEO_POSTER = '/Images/VideoPoster.png',
-  SERVICE_IMAGE_CONTAINER = '/Images/ServiceMainContainer.png',
-  NS_COST = '/Images/Home/NSCost.svg',
-  NS_CULTURE = '/Images/Home/NSCulture.svg',
-  NS_QUALITY = '/Images/Home/NSQuality.svg',
-  NS_TIME = '/Images/Home/NSTime.svg',
-  NS_TRIPS = '/Images/Home/NSTrips.svg',
-  SERVICES_BANNER = '/Images/Services/ServicesBanner.png',
-  SERVICES_DESCRIPTION = '/Images/Services/ServicesDescription.svg',
-  SERVICES_DESCRIPTION_MOBILE = '/Images/Services/ServicesDescriptionMobile.svg',
-  PARALLAX_BANNER_CONTAINER = '/Images/BannerIrregularContainer.svg',
-  PARALLAX_BANNER_BACKGROUND = '/Images/BannerBackgroundImage.png',
-  SERVICE_WEB_BACKGROUND_WEB = '/Images/ServiceWebBackground.jpg',
-  SERVICE_WEB_BACKGROUND_UX = '/Images/ServiceUXBackground.png',
-  SERVICE_WEB_BACKGROUND_QA = '/Images/ServiceQABackground.jpeg',
-  STACK_SECTION_BACKGROUND = '/Images/TechnologyStackBackground.png',
-  STACK_IMAGES_BASE_URL = '/Images/StackImages/',
-  WORK_STEPS_BASE_URL = '/Images/Services/WorkSteps/',
-  ABOUT_US_INTRODUCTION = '/Images/AboutUs/Introduction/AboutUsIntroduction.svg',
-  FOUNDER_1 = '/Images/AboutUs/Founders/Founder1.jpg',
-  FOUNDER_2 = '/Images/AboutUs/Founders/Founder2.jpg',
-  FOUNDER_3 = '/Images/AboutUs/Founders/Founder3.jpg',
-  FOUNDER_ICON = '/Images/AboutUs/Founders/UserIcon.svg',
-  CB_DESKTOP = '/Images/Services/Capabilities/desktop.svg',
-  CB_WEB = '/Images/Services/Capabilities/web.svg',
-  CB_MOBILE = '/Images/Services/Capabilities/mobile.svg',
-  CB_BACKEND = '/Images/Services/Capabilities/backend.svg',
-  CB_UX = '/Images/Services/Capabilities/ux.svg',
-  CB_QA = '/Images/Services/Capabilities/qa.svg',
-  CONTACT_US_BANNER = '/Images/ContactUs/ContactUsbanner.png',
-  CONTACT_US_FORM = '/Images/ContactUs/ContactUsForm.png',
-  SOCIAL_IMAGES_BASE_URL = '/Images/SocialImages/',
-  FOOTER_BACKGROUND = '/Images/FooterBackgroundImage.png',
-  FOOTER_SOCIAL_BACKGROUND = '/Images/FooterSocialBackgroundImage.png',
-  BRAND_WHITE = '/Images/BrandWhite.png',
-}
+
+const baseImagesURL = 'https://hopperhock-ui-assets.s3.amazonaws.com/images';
+
+export const Images = {
+  HOME_VIDEO_POSTER: `${baseImagesURL}/VideoPoster.png`,
+  SERVICE_IMAGE_CONTAINER: `${baseImagesURL}/ServiceMainContainer.png`,
+  NS_COST: `${baseImagesURL}/home/NSCost.svg`,
+  NS_CULTURE: `${baseImagesURL}/home/NSCulture.svg`,
+  NS_QUALITY: `${baseImagesURL}/home/NSQuality.svg`,
+  NS_TIME: `${baseImagesURL}/home/NSTime.svg`,
+  NS_TRIPS: `${baseImagesURL}/home/NSTrips.svg`,
+  SERVICES_BANNER: `${baseImagesURL}/services/ServicesBanner.png`,
+  SERVICES_DESCRIPTION: `${baseImagesURL}/services/ServicesDescription.svg`,
+  SERVICES_DESCRIPTION_MOBILE: `${baseImagesURL}/services/ServicesDescriptionMobile.svg`,
+  PARALLAX_BANNER_CONTAINER: `${baseImagesURL}/BannerIrregularContainer.svg`,
+  PARALLAX_BANNER_BACKGROUND: `${baseImagesURL}/BannerBackgroundImage.png`,
+  SERVICE_WEB_BACKGROUND_WEB: `${baseImagesURL}/ServiceWebBackground.jpg`,
+  SERVICE_WEB_BACKGROUND_UX: `${baseImagesURL}/ServiceUXBackground.png`,
+  SERVICE_WEB_BACKGROUND_QA: `${baseImagesURL}/ServiceQABackground.jpeg`,
+  STACK_SECTION_BACKGROUND: `${baseImagesURL}/TechnologyStackBackground.png`,
+  STACK_IMAGES_BASE_URL: `${baseImagesURL}/stack-images/`,
+  WORK_STEPS_BASE_URL: `${baseImagesURL}/services/work-steps/`,
+  ABOUT_US_INTRODUCTION: `${baseImagesURL}/about-us/introduction/AboutUsIntroduction.svg`,
+  FOUNDER_1: `${baseImagesURL}/about-us/founders/Founder1.jpg`,
+  FOUNDER_2: `${baseImagesURL}/about-us/founders/Founder2.jpg`,
+  FOUNDER_3: `${baseImagesURL}/about-us/founders/Founder3.jpg`,
+  FOUNDER_ICON: `${baseImagesURL}/about-us/founders/UserIcon.svg`,
+  CB_DESKTOP: `${baseImagesURL}/services/capabilities/desktop.svg`,
+  CB_WEB: `${baseImagesURL}/services/capabilities/web.svg`,
+  CB_MOBILE: `${baseImagesURL}/services/capabilities/mobile.svg`,
+  CB_BACKEND: `${baseImagesURL}/services/capabilities/backend.svg`,
+  CB_UX: `${baseImagesURL}/services/capabilities/ux.svg`,
+  CB_QA: `${baseImagesURL}/services/capabilities/qa.svg`,
+  CONTACT_US_BANNER: `${baseImagesURL}/contact-us/ContactUsbanner.png`,
+  CONTACT_US_FORM: `${baseImagesURL}/contact-us/ContactUsForm.png`,
+  SOCIAL_IMAGES_BASE_URL: `${baseImagesURL}/social-images/`,
+  FOOTER_BACKGROUND: `${baseImagesURL}/FooterBackgroundImage.png`,
+  FOOTER_SOCIAL_BACKGROUND: `${baseImagesURL}/FooterSocialBackgroundImage.png`,
+  BRAND_WHITE: `${baseImagesURL}/BrandWhite.png`,
+};
 
 export const STACK_IMAGES = [
   'dotnet.svg',
@@ -74,15 +77,10 @@ export var WORK_PROCESS_STEPS_ES = [
 ];
 
 export var SOCIAL_NETWORK_ICONS = [
-  { url: 'http://www.facebook.com', image: '/Images/facebook.svg' },
-  { url: 'http://www.twitter.com', image: '/Images/twitter.svg' },
-  { url: 'http://www.instagram.com', image: '/Images/instagram.svg' },
-  { url: 'http://www.linkedin.com', image: '/Images/linkedin.svg' },
+  { url: 'http://www.facebook.com', image: 'facebook.svg' },
+  { url: 'http://www.twitter.com', image: 'twitter.svg' },
+  { url: 'http://www.instagram.com', image: 'instagram.svg' },
+  { url: 'http://www.linkedin.com', image: 'linkedin.svg' },
 ];
 
-export const SOCIAL_IMAGES = [
-  'twitter.svg',
-  'facebook.svg',
-  'instagram.svg',
-  'linkedin.svg'
-];
+export const SOCIAL_IMAGES = ['twitter.svg', 'facebook.svg', 'instagram.svg', 'linkedin.svg'];
