@@ -1,6 +1,6 @@
-export const HOME_VIDEO = 'https://hopperhock-ui-assets.s3.amazonaws.com/videos/HopperHockVideo.mp4';
+export const HOME_VIDEO = 'https://d16j9gygjja0kf.cloudfront.net/videos/HopperHockVideo.mp4';
 
-const baseImagesURL = 'https://hopperhock-ui-assets.s3.amazonaws.com/images';
+const baseImagesURL = 'https://d16j9gygjja0kf.cloudfront.net/images';
 
 export const Images = {
   HOME_VIDEO_POSTER: `${baseImagesURL}/VideoPoster.webp`,
