@@ -33,7 +33,7 @@ const Header: FC = () => {
       <Brand transparent={isTransparent} />
       <MobileNavbar visible={isMobileNavVisible} onToggle={handleMobileToggled} />
       <Navbar transparent={isTransparent} />
-      <BookCallButton transparent={isTransparent}>{t('nav.bookACall')}</BookCallButton>
+      <BookCallButton transparent={isTransparent} href="/contact-us">{t('nav.bookACall')}</BookCallButton>
       <LanguageText transparent={isTransparent} onClick={handleToggleLanguage}>
         {currentLangLabel}
       </LanguageText>

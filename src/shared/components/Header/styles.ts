@@ -5,6 +5,7 @@ import { Margin, Padding, Spacing } from 'styles/utilities/gutters';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 import { backgroundFadeIn } from 'styles/utilities/animations';
 import { hexToRGB } from 'styles/utilities/funtions';
+import { Subtitle } from 'styles/utilities/font-sizes';
 
 export default styled.nav<{ transparent: boolean }>`
   position: fixed;
@@ -55,7 +56,7 @@ export const Brand = styled(HopperhockLogo)`
   }
 `;
 
-export const BookCallButton = styled.button<{ transparent: boolean }>`
+export const BookCallButton = styled.a<{ transparent: boolean }>`
   background-color: ${({ theme, transparent }) => (transparent ? 'inherit' : theme.PRIMARY_COLOR_DARK_1)};
   border: ${({ theme, transparent }) => (transparent ? `1px solid ${theme.SUCCESS}` : 'none')};
   outline: inherit;
@@ -64,6 +65,8 @@ export const BookCallButton = styled.button<{ transparent: boolean }>`
   font-weight: ${FontWeight.medium};
   margin-left: auto;
   padding: ${Padding.SIZE_3} ${Padding.SIZE_8};
+  text-decoration: none ;
+  font-size: ${TextBody.SIZE_4};
   cursor: pointer;
   :hover {
     background-color: ${({ theme, transparent }) =>

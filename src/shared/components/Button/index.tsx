@@ -1,8 +1,6 @@
 import React, { FC } from 'react';
-import { Globals } from 'styles/utilities/colors';
 import { GenericButton } from './button.styles';
 import { TextBody } from 'styles/utilities/font-sizes';
-import { redirectToGenericRoute } from 'shared/utils/utils';
 
 type IButtonProps = {
   color: string;
@@ -31,9 +29,9 @@ const Button: FC<IButtonProps> = ({
       isOutline={isOutline}
       textColor={textColor}
       fontSize={fontSize}
-      onClick={() => redirectToGenericRoute(redirectAction)}
+      href={redirectAction}
     >
-      {children}
+    {children}
     </GenericButton>
   );
 };

@@ -8,7 +8,6 @@ import {
   BrandContainer,
   SchedulleCallContainer,
   LeftLabel,
-  ButtonContainer,
   ButtonText,
   ContactInformationContainer,
   ContactText,
@@ -24,9 +23,9 @@ const LeftContainer: FC = () => {
       </BrandContainer>
       <SchedulleCallContainer>
         <LeftLabel>{t('footer.left.wantTalkAbout')}</LeftLabel>
-        <ButtonContainer>
-          <ButtonText>{t('footer.left.scheduleCall')}</ButtonText>
-        </ButtonContainer>
+        <ButtonText href="/contact-us">
+          {t('footer.left.scheduleCall')}
+        </ButtonText>
       </SchedulleCallContainer>
       <ContactInformationContainer>
         <ContactText>

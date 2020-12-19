@@ -44,6 +44,7 @@ export const CardDescriptioner = styled.p`
 `;
 
 export const ButtonContainer = styled.div`
+  display: flex;
   transition-delay: 0.1s;
   position: absolute;
   width: 100%;
@@ -58,6 +59,32 @@ export const Divider = styled.hr`
 `;
 
 export const Containers = styled.div`
+ & ${ChangeColorContainer} {
+    @media (max-width: ${Breakpoints.mobile}) {
+      position: absolute;
+      margin-left: 8.1rem;
+      width: 23.25rem;
+      background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
+      margin-left: 0rem;
+      width: 21.25rem;
+    }
+    @media (max-width: ${Breakpoints.tablet}) {
+      position: absolute;
+      margin-left: 8.1rem;
+      width: 23.25rem;
+      background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
+      margin-left: 0rem;
+      width: 21.25rem;
+    }
+    @media (max-width: ${Breakpoints.tabletXL}) {
+      position: absolute;
+      margin-left: 8.1rem;
+      width: 23.25rem;
+      background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
+      margin-left: 0rem;
+      width: 21.25rem;
+    }
+  }
   &:hover ${ChangeColorContainer} {
     position: absolute;
     margin-left: 8.1rem;
@@ -68,6 +95,29 @@ export const Containers = styled.div`
       width: 21.25rem;
     }
   }
+   & ${ServiceTitle} {
+     @media (max-width: ${Breakpoints.mobile}) {
+      margin: 3rem auto;
+      line-height: 1.875rem;
+      top: 0rem;
+      font-size: ${Title.SIZE_6};
+      color: ${Globals.WHITE};
+    }
+    @media (max-width: ${Breakpoints.tablet}) {
+      margin: 3rem auto;
+      line-height: 1.875rem;
+      top: 0rem;
+      font-size: ${Title.SIZE_6};
+      color: ${Globals.WHITE};
+    }
+    @media (max-width: ${Breakpoints.tabletXL}) {
+      margin: 3rem auto;
+      line-height: 1.875rem;
+      top: 0rem;
+      font-size: ${Title.SIZE_6};
+      color: ${Globals.WHITE};
+    }
+  }
   &:hover ${ServiceTitle} {
     margin: 3rem auto;
     line-height: 1.875rem;
@@ -75,12 +125,57 @@ export const Containers = styled.div`
     font-size: ${Title.SIZE_6};
     color: ${Globals.WHITE};
   }
+  & ${ServicesDivider} {
+    @media (max-width: ${Breakpoints.mobile}) {
+      display: inherit;
+    } 
+    @media (max-width: ${Breakpoints.tablet}) {
+      display: inherit;
+    } 
+    @media (max-width: ${Breakpoints.tabletXL}) {
+      display: inherit;
+    } 
+  }
   &:hover ${ServicesDivider} {
     display: inherit;
+  }
+  & ${CardDescriptioner} {
+    @media (max-width: ${Breakpoints.mobile}) {
+      opacity: 1;
+      transition: opacity 2s;
+    } 
+     @media (max-width: ${Breakpoints.tablet}) {
+      opacity: 1;
+      transition: opacity 2s;
+    } 
+     @media (max-width: ${Breakpoints.tabletXL}) {
+      opacity: 1;
+      transition: opacity 2s;
+    } 
   }
   &:hover ${CardDescriptioner} {
     opacity: 1;
     transition: opacity 2s;
+  }
+  & ${ButtonContainer} {
+    @media (max-width: ${Breakpoints.mobile}) {
+      transition: visibility 1s linear, opacity 1s linear;
+      transition-delay: 0.1s;
+      visibility: visible;
+      opacity: 1;
+    } 
+    @media (max-width: ${Breakpoints.tablet}) {
+      transition: visibility 1s linear, opacity 1s linear;
+      transition-delay: 0.1s;
+      visibility: visible;
+      opacity: 1;
+    } 
+    @media (max-width: ${Breakpoints.tabletXL}) {
+      transition: visibility 1s linear, opacity 1s linear;
+      transition-delay: 0.1s;
+      visibility: visible;
+      opacity: 1;
+    } 
   }
   &:hover ${ButtonContainer} {
     transition: visibility 1s linear, opacity 1s linear;
@@ -89,3 +184,4 @@ export const Containers = styled.div`
     opacity: 1;
   }
 `;
+

@@ -4,13 +4,17 @@ import { Padding, Margin } from 'styles/utilities/gutters';
 import { TextBody } from 'styles/utilities/font-sizes';
 import { Breakpoints } from 'styles/utilities/breakpoints';
 
-export const GenericButton = styled.button<{
+export const GenericButton = styled.a<{
   color: string;
   isOutline: boolean;
   textColor: string;
   width: string;
   fontSize: string;
 }>`
+  text-decoration: none;
+  height: 100%;
+  padding-top: 15px;
+  text-align: center;
   background-color: ${props => (props.isOutline ? 'transparent' : props.color)};
   border: ${props => (props.isOutline ? `1px solid ${props.color}` : '0')};
   color: ${({ textColor }) => textColor};

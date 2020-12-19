@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-
 import { Container, Content, CopyrightContainer, Divisor, ImagesContainer, SocialContainer } from './styles';
 import { Images, SOCIAL_IMAGES } from 'shared/constants/assets';
+import React, { FC } from 'react';
+
 import LeftContainer from './LeftContainer';
 import RightContainer from './RightContainer';
 import { useTranslation } from 'shared/utils/internationalization';
@@ -20,7 +20,8 @@ const Footer: FC = () => {
       <SocialContainer socialImageSource={Images.FOOTER_SOCIAL_BACKGROUND}>
         <CopyrightContainer>
           © {today.getFullYear()}
-          <span>&nbsp; HopperHock &nbsp;</span>{t('footer.copyright')}
+          <span>&nbsp; HopperHock &nbsp;</span>
+          {t('footer.copyright')}
         </CopyrightContainer>
         <ImagesContainer>
           {SOCIAL_IMAGES.map((image, index) => {

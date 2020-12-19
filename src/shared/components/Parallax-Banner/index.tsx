@@ -30,7 +30,7 @@ const ParallaxBanner: FC<IParallaxBannerProps> = ({ bannerImage, bannerContainer
             {t('banner.label.description')}
             <ParallaxBoldTextDisplayer>{t('banner.bold')}</ParallaxBoldTextDisplayer>
           </ParallaxTextDisplayer>
-          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction="about-us" width={BUTTON_WIDTH}>
+          <Button color={BlueGrey.DARK_1} textColor={Globals.WHITE} redirectAction="contact-us" width={BUTTON_WIDTH}>
             {t('banner.button')}
           </Button>
         </ParallaxContainer>

@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
-import { useTranslation } from 'shared/utils/internationalization';
 import { Container, Form } from './styles';
+import React, { FC } from 'react';
+
+import { useTranslation } from 'shared/utils/internationalization';
 
 const ContactForm: FC = () => {
   const { t } = useTranslation('contact-us');
@@ -20,7 +21,7 @@ const ContactForm: FC = () => {
           cols={5}
         />
         <button type="submit" className="btn btn-primary">
-        {t('form.confirm')}
+          {t('form.confirm')}
         </button>
       </Form>
     </Container>

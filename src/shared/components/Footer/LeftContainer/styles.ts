@@ -41,7 +41,7 @@ export const LeftLabel = styled.span`
   }
 `;
 
-export const ButtonContainer = styled.div`
+export const ButtonText = styled.a`
   display: flex;
   align-self: flex-end;
   justify-content: center;
@@ -50,18 +50,14 @@ export const ButtonContainer = styled.div`
   height: 55px;
   border: solid 1px ${({ theme }) => theme.WHITE};
   margin-top: 33px;
+  font-size: 12px;
+ letter-spacing: 0.3px;
+ color: ${({ theme }) => theme.WHITE};
+ text-decoration: none;
   cursor: pointer;
-
   @media (max-width: ${Breakpoints.tablet}) {
     align-self: auto;
   }
-`;
-
-export const ButtonText = styled.span`
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0.3px;
-  color: ${({ theme }) => theme.WHITE};
 `;
 
 export const ContactInformationContainer = styled.div`

@@ -1,9 +1,11 @@
-import styled from 'styled-components';
-import { Breakpoints } from 'styles/utilities/breakpoints';
-import { Subtitle, TextBody } from 'styles/utilities/font-sizes';
 import { Margin, Padding } from 'styles/utilities/gutters';
+import { Subtitle, TextBody } from 'styles/utilities/font-sizes';
+
+import { Breakpoints } from 'styles/utilities/breakpoints';
+import styled from 'styled-components';
 
 export const Container = styled.div<{ footerImageSource: string }>`
+  position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -55,7 +57,6 @@ export const CopyrightContainer = styled.div`
   span {
     font-weight: bold;
   }
-
 
   @media (max-width: ${Breakpoints.tablet}) {
     font-size: ${TextBody.SIZE_4};

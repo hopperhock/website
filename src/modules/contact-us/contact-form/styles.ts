@@ -1,19 +1,32 @@
-import { Margin } from './../../../styles/utilities/gutters';
-import styled from 'styled-components';
-import { FontWeight } from 'styles/utilities/font-sizes';
-import { Padding } from 'styles/utilities/gutters';
+import { FontWeight, Subtitle, TextBody } from 'styles/utilities/font-sizes';
+
+import { Breakpoints } from 'styles/utilities/breakpoints';
 import { Images } from 'shared/constants/assets';
+import { Margin } from './../../../styles/utilities/gutters';
+import { Padding } from 'styles/utilities/gutters';
+import styled from 'styled-components';
 
 export const Container = styled.div`
   padding: ${Padding.SIZE_4};
   flex: auto;
   background: url(${Images.CONTACT_US_FORM}) no-repeat;
   background-size: cover;
+  @media (max-width: ${Breakpoints.laptop}) {
+    padding: ${Padding.SIZE_0};
+    padding-bottom: 100px;
+  }
   h1 {
     font-family: 'roboto light';
-    margin-top: 30%;
+    padding-top: 30%;
     text-align: center;
     color: ${({ theme }) => theme.SECONDARY_COLOR_LIGHT_2};
+    @media (max-width: ${Breakpoints.mobile}) {
+      font-size: ${Subtitle.SIZE_3};
+      padding-top: 50px;
+    }
+    @media (max-width: ${Breakpoints.laptop}) {
+      padding-top: 100px;
+    }
   }
 `;
 
@@ -22,7 +35,6 @@ export const Form = styled.form`
   display: flex;
   flex-flow: column;
   align-items: center;
-
   input,
   textarea {
     width: 60%;

@@ -1,5 +1,6 @@
 import React, { FC } from 'react';
 import { Container } from './styles';
+import { Images, SOCIAL_IMAGES } from 'shared/constants/assets';
 
 type ISocialNetworkProps = {
   socialLogos: {
@@ -15,7 +16,7 @@ const SocialNetworkDisplayer: FC<ISocialNetworkProps> = ({ socialLogos }) => {
         return (
           <li key={logo.url}>
             <a href={logo.url} target="_blank">
-              <img src={logo.image} />
+              <img src={`${Images.SOCIAL_IMAGES_BASE_URL}${logo.image}`} />
             </a>
           </li>
         );

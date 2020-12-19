@@ -1,10 +1,11 @@
-import styled, { keyframes } from 'styled-components';
-import ServicesDescriptionBackground from 'styles/illustrations/ServicesDescriptionBackground';
-import { Title, FontWeight, Subtitle, TextBody } from 'styles/utilities/font-sizes';
-import { Breakpoints } from 'styles/utilities/breakpoints';
+import { FontWeight, Subtitle, TextBody, Title } from 'styles/utilities/font-sizes';
 import { Margin, Padding } from 'styles/utilities/gutters';
-import { Images } from 'shared/constants/assets';
+import styled, { keyframes } from 'styled-components';
+
+import { Breakpoints } from 'styles/utilities/breakpoints';
 import { Children } from 'react';
+import { Images } from 'shared/constants/assets';
+import ServicesDescriptionBackground from 'styles/illustrations/ServicesDescriptionBackground';
 
 export const Container = styled.div`
   position: relative;
@@ -23,11 +24,21 @@ export const ContactUsInformationTitle = styled.div`
   color: ${({ theme }) => theme.NAVIGATION_TEXT_COLOR};
   font-family: 'Roboto Bold', 'Helvetica';
   font-size: ${Title.SIZE_1};
+  @media (max-width: ${Breakpoints.laptop}) {
+    top: 150px;
+    font-size: ${Title.SIZE_1};
+  }
+  @media (max-width: ${Breakpoints.tabletXL}) {
+    top: 150px;
+    font-size: ${Title.SIZE_5};
+  }
   @media (max-width: ${Breakpoints.tablet}) {
-    font-size: ${Title.SIZE_6};
+    top: 120px;
+    font-size: ${Title.SIZE_5};
   }
   @media (max-width: ${Breakpoints.mobile}) {
-    margin-bottom: 45%;
+    top: 50px;
+    font-size: 18px;
   }
 `;
 

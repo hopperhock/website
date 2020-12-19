@@ -2,7 +2,6 @@ import React, { FC } from 'react';
 import { useRouter } from 'next/router';
 import Backdrop from 'shared/components/Backdrop';
 import MobileNav, { Brand, LanguageText, MobileNavFooter } from './styles';
-import * as translations from './translations/en.json';
 import { useTranslation } from 'shared/utils/internationalization';
 import useToggleLanguage from 'shared/hooks/useToggleLanguage';
 
@@ -32,7 +31,7 @@ const MobileNavbar: FC<Props> = ({ visible, onToggle }) => {
           <li onClick={() => handleRedirect('/contact-us')}>{t('nav.contactUs')}</li>
         </ul>
         <MobileNavFooter>
-          {t('nav.description')} <br /> <a href="#">{t('nav.bookACall')}</a>
+          {t('nav.description')} <br /> <a href="/contact-us">{t('nav.bookACall')}</a>
           <LanguageText onClick={handleToggleLanguage}>{currentLangLabel}</LanguageText>
         </MobileNavFooter>
       </MobileNav>
