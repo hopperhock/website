@@ -1,10 +1,11 @@
-import { Subtitle, Title, TextBody } from '../../../../../styles/utilities/font-sizes';
-import styled from 'styled-components';
-import { Margin } from 'styles/utilities/gutters';
-import { ChangeColorContainer } from 'shared/components/Card/styles';
-import { Globals, Alternatives } from 'styles/utilities/colors';
+import { Alternatives, Globals } from 'styles/utilities/colors';
+import { Subtitle, TextBody, Title } from '../../../../../styles/utilities/font-sizes';
+
 import { Breakpoints } from 'styles/utilities/breakpoints';
+import { ChangeColorContainer } from 'shared/components/Card/styles';
+import { Margin } from 'styles/utilities/gutters';
 import { hexToRGB } from 'styles/utilities/funtions';
+import styled from 'styled-components';
 
 export const ServiceTitle = styled.p`
   font-family: roboto bold;
@@ -59,23 +60,7 @@ export const Divider = styled.hr`
 `;
 
 export const Containers = styled.div`
- & ${ChangeColorContainer} {
-    @media (max-width: ${Breakpoints.mobile}) {
-      position: absolute;
-      margin-left: 8.1rem;
-      width: 23.25rem;
-      background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
-      margin-left: 0rem;
-      width: 21.25rem;
-    }
-    @media (max-width: ${Breakpoints.tablet}) {
-      position: absolute;
-      margin-left: 8.1rem;
-      width: 23.25rem;
-      background-color: ${({ theme }) => hexToRGB(theme.BLACK, '0.8')};
-      margin-left: 0rem;
-      width: 21.25rem;
-    }
+  & ${ChangeColorContainer} {
     @media (max-width: ${Breakpoints.tabletXL}) {
       position: absolute;
       margin-left: 8.1rem;
@@ -95,8 +80,8 @@ export const Containers = styled.div`
       width: 21.25rem;
     }
   }
-   & ${ServiceTitle} {
-     @media (max-width: ${Breakpoints.mobile}) {
+  & ${ServiceTitle} {
+    @media (max-width: ${Breakpoints.mobile}) {
       margin: 3rem auto;
       line-height: 1.875rem;
       top: 0rem;
@@ -128,13 +113,13 @@ export const Containers = styled.div`
   & ${ServicesDivider} {
     @media (max-width: ${Breakpoints.mobile}) {
       display: inherit;
-    } 
+    }
     @media (max-width: ${Breakpoints.tablet}) {
       display: inherit;
-    } 
+    }
     @media (max-width: ${Breakpoints.tabletXL}) {
       display: inherit;
-    } 
+    }
   }
   &:hover ${ServicesDivider} {
     display: inherit;
@@ -143,15 +128,15 @@ export const Containers = styled.div`
     @media (max-width: ${Breakpoints.mobile}) {
       opacity: 1;
       transition: opacity 2s;
-    } 
-     @media (max-width: ${Breakpoints.tablet}) {
+    }
+    @media (max-width: ${Breakpoints.tablet}) {
       opacity: 1;
       transition: opacity 2s;
-    } 
-     @media (max-width: ${Breakpoints.tabletXL}) {
+    }
+    @media (max-width: ${Breakpoints.tabletXL}) {
       opacity: 1;
       transition: opacity 2s;
-    } 
+    }
   }
   &:hover ${CardDescriptioner} {
     opacity: 1;
@@ -163,19 +148,19 @@ export const Containers = styled.div`
       transition-delay: 0.1s;
       visibility: visible;
       opacity: 1;
-    } 
+    }
     @media (max-width: ${Breakpoints.tablet}) {
       transition: visibility 1s linear, opacity 1s linear;
       transition-delay: 0.1s;
       visibility: visible;
       opacity: 1;
-    } 
+    }
     @media (max-width: ${Breakpoints.tabletXL}) {
       transition: visibility 1s linear, opacity 1s linear;
       transition-delay: 0.1s;
       visibility: visible;
       opacity: 1;
-    } 
+    }
   }
   &:hover ${ButtonContainer} {
     transition: visibility 1s linear, opacity 1s linear;
@@ -184,4 +169,3 @@ export const Containers = styled.div`
     opacity: 1;
   }
 `;
-
