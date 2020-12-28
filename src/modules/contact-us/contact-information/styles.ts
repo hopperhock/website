@@ -25,7 +25,6 @@ export const ContactUsInformationTitle = styled.div`
   font-family: 'Roboto Bold', 'Helvetica';
   font-size: ${Title.SIZE_1};
   @media (max-width: ${Breakpoints.laptop}) {
-    top: 150px;
     font-size: ${Title.SIZE_1};
   }
   @media (max-width: ${Breakpoints.tabletXL}) {
@@ -34,7 +33,6 @@ export const ContactUsInformationTitle = styled.div`
   }
   @media (max-width: ${Breakpoints.tablet}) {
     top: 120px;
-    font-size: ${Title.SIZE_5};
   }
   @media (max-width: ${Breakpoints.mobile}) {
     top: 50px;
