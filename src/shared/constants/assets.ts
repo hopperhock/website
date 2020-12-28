@@ -21,7 +21,7 @@ export const Images = {
   STACK_SECTION_BACKGROUND: `${baseImagesURL}/TechnologyStackBackground.webp`,
   STACK_IMAGES_BASE_URL: `${baseImagesURL}/stack-images/`,
   WORK_STEPS_BASE_URL: `${baseImagesURL}/services/work-steps/`,
-  ABOUT_US_INTRODUCTION: `Images/about-us/introduction/AboutUsIntroduction.svg`,
+  ABOUT_US_INTRODUCTION: `${baseImagesURL}/about-us/introduction/AboutUsIntroduction.svg`,
   FOUNDER_1: `${baseImagesURL}/about-us/founders/Founder1.webp`,
   FOUNDER_2: `${baseImagesURL}/about-us/founders/Founder2.webp`,
   FOUNDER_3: `${baseImagesURL}/about-us/founders/Founder3.webp`,
