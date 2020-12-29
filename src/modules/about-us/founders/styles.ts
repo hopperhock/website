@@ -134,6 +134,10 @@ export const Description = styled.div`
     padding: 0 2.5rem;
     padding-top: 5rem;
   }
+  @media (max-width: ${Breakpoints.laptop}) {
+    padding: 0 2.5rem;
+    padding-top: 4rem;
+  }
   @media (max-width: ${Breakpoints.tabletXL}) {
     height: auto;
     width: 100%;
@@ -159,6 +163,9 @@ export const DescriptionHeading = styled.div`
   span {
     font-family: 'Roboto';
     color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
+  }
+  @media (max-width: ${Breakpoints.laptop}) {
+    font-size: 38px;
   }
   @media (max-width: ${Breakpoints.mobile}) {
     font-size: 22px;
@@ -230,7 +237,7 @@ export const FounderDescription = styled.p`
     font-size: 22px;
   }
   @media (max-width: ${Breakpoints.laptop}) {
-    font-size: 20px;
+    font-size: 22px;
   }
   @media (max-width: ${Breakpoints.tabletXL}) {
     font-size: 32px;
@@ -247,8 +254,8 @@ export const FounderDescription = styled.p`
 `;
 
 export const ActionButton = styled.button`
-  margin: auto;
-  margin-bottom: 5rem;
+  margin: 5rem auto;
+  margin-top: auto;
   background-color: ${({ theme }) => theme.PRIMARY_COLOR_DARK_1};
   width: 17rem;
   border: none;
@@ -266,7 +273,8 @@ export const ActionButton = styled.button`
   }
   @media (max-width: ${Breakpoints.laptop}) {
     font-size: ${TextBody.SIZE_2};
-    margin-bottom: 2rem;
+    margin: 3rem auto;
+    margin-top: auto;
   }
   @media (max-width: ${Breakpoints.tabletXL}) {
     font-size: ${Subtitle.SIZE_1};

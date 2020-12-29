@@ -38,7 +38,7 @@ export const Images = {
   FOOTER_BACKGROUND: `${baseImagesURL}/FooterBackgroundImage.webp`,
   FOOTER_SOCIAL_BACKGROUND: `${baseImagesURL}/FooterSocialBackgroundImage.webp`,
   BRAND_WHITE: `${baseImagesURL}/BrandWhite.webp`,
-  VALUES_BACKGROUND: `${baseImagesURL}/ValuesBackground.webp`
+  VALUES_BACKGROUND: `${baseImagesURL}/ValuesBackground.webp`,
 };
 
 export const STACK_IMAGES = [
