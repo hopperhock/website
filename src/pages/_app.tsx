@@ -1,16 +1,33 @@
-import { AppProps } from 'next/app';
-import { SFC } from 'react';
+import App, { AppProps, AppContext  } from 'next/app';
+import { FC, useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Navbar from 'shared/components/Navbar';
-import { DARK_THEME } from 'styles/theme';
+import { THEME } from 'styles/theme';
+import Header from 'shared/components/Header';
+import Footer from 'shared/components/Footer';
+import { GlobalStyles } from 'styles/global-style';
+import { appWithTranslation } from 'shared/utils/internationalization';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
-const MyApp: SFC<AppProps> = ({ Component, pageProps }) => {
+type AppComponent = FC<AppProps> & { getInitialProps: (appContext: AppContext) => Promise<any> };
+
+const MyApp: AppComponent = ({ Component, pageProps }) => {
+  useEffect(() => {
+    history.scrollRestoration = 'manual';
+  }, []);
+
   return (
-    <ThemeProvider theme={DARK_THEME}>
-      <Navbar />
+    <ThemeProvider theme={THEME}>
+      <GlobalStyles />
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 };
 
-export default MyApp;
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+  return { ...appProps };
+};
+
+export default appWithTranslation(MyApp);

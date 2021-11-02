@@ -1,0 +1,41 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "aboutUs": "About us",
+    "contactUs": "Contact us",
+    "bookACall": "BOOK A CALL",
+    "description": "Are you interested in having a conversation with us?"
+  },
+  "footer": {
+    "copyright": "All rights reserved.",
+    "left": {
+      "wantTalkAbout": "Want to talk about your Project ? ",
+      "scheduleCall": "LET’S SCHEDULE A CALL",
+      "address": {
+        "label": "Address: ",
+        "value": " Lorem isumitem here"
+      },
+      "phone": {
+        "label": "Phone: "
+      },
+      "email": {
+        "label": "Email: "
+      }
+    },
+    "right": {
+      "global": {
+        "title": "Global",
+        "subTitle": "Check our services."
+      },
+      "dev": {
+        "title": "Development",
+        "subTitle": "Talk with us, we help and support your business."
+      },
+      "design": {
+        "title": "Design",
+        "subTitle": "Create an MVP ? Contact us."
+      }
+    }
+  }
+}

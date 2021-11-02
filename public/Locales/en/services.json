@@ -1,0 +1,30 @@
+{
+  "capabilities": {
+    "highlighted-title": "WE OFFER YOU",
+    "title": "A Suite Of Capabilities.",
+    "desktop": "Desktop",
+    "web": "Web Development",
+    "mobile": "Mobile",
+    "backend": "Backend",
+    "ux": "UX/UI",
+    "qa": "Quality Assurance"
+  },
+  "description": {
+    "tech": "Technical",
+    "staff": "Staff",
+    "augmentation": "Augmentation",
+    "content": "HopperHock cares about the standard, great practices and excellent technical skills. We guarantee a great place that really contributes to your team and your business."
+  },
+  "introduction": {
+    "title": "WE HELP YOU TO",
+    "description": "Bring Your Ideas To Life.",
+    "sub-description": "Improve + Grown + Innovate"
+  },
+  "custom-product": {
+    "title": ["Custom Product & Software", "Development ?"],
+    "content": "In all our services, we ensure the final product fulfills your expectation. This is because since day one we provide you an accompanying through every phase of development: Clear estimations, Demo sessions, Mocks, flexible methodologies, and more."
+  },
+  "how-we-work": {
+      "title": "How we work ?"
+  }
+}

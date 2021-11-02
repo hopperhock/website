@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "SOMOS HOPPERHOCK.",
+    "content": "Soluciones de software para potenciar tu negocio."
+  },
+  "nearshore": {
+    "highlighted-title": "GARANTIZAMOS",
+    "title": "La mejor experiencia de nearshore en Costa Rica",
+    "ns-trips": "No más viajes largos",
+    "ns-cost": "Costos bajos",
+    "ns-quality": "Personal de calidad",
+    "ns-culture": "Excelente cultura",
+    "ns-time": "Zona horaria"
+  },
+  "services": {
+    "title": "servicios que ofrecemos",
+    "subtitle": "¿Cómo podemos ayudarte?",
+    "button": {
+      "services": "NUESTROS SERVICIOS",
+      "contact": "AGENDAR LLAMADA"
+    },
+    "develop": {
+      "title": "Desarrollo de Software",
+      "description": "Te ayudamos a potenciar tu negocio transformando ideas en oportunidades."
+    },
+    "qa": {
+      "title": "Control de calidad",
+      "description": "Actualiza tu proyecto con las mejores prácticas"
+    },
+    "ux": {
+      "title": "UX/UI",
+      "description": "Vive los valores de tu compañia. Convertimos tus ideas en diseños exitosos"
+    }
+  },
+  "banner": {
+    "label": {
+      "title": "Para tener proyectos exitosos es escencial: ",
+      "description": "Talento, comunicación, retroalimentación, y una excelente cultura."
+    },
+    "bold": "Somos HopperHock.",
+    "button": "¡ HABLEMOS !"
+  },
+  "techstack": {
+    "title": "Algúnas tecnologías de nuestro ",
+    "upper": "STACK"
+  }
+}

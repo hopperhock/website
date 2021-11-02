@@ -1,0 +1,47 @@
+{
+  "header": {
+    "title": "WE ARE HOPPERHOCK.",
+    "content": "Custom Software Solutions That Empower Your Business."
+  },
+  "nearshore": {
+    "highlighted-title": "WE GUARANTEE",
+    "title": "The best Nearshore Experience in Costa Rica",
+    "ns-trips": "No more long trips",
+    "ns-cost": "Lower Cost",
+    "ns-quality": "Quality performers",
+    "ns-culture": "Great Culture",
+    "ns-time": "Time zone"
+  },
+  "services": {
+    "title": "services we provide",
+    "subtitle": "how can we help you ?",
+    "button": {
+      "services": "OUR SERVICES",
+      "contact": "BOOK A CALL"
+    },
+    "develop": {
+      "title": "Software Development",
+      "description": "We help you to empower your business transforming your ideas into opportunities."
+    },
+    "qa": {
+      "title": "Quality Assurance",
+      "description": "Improve your project with the best practices."
+    },
+    "ux": {
+      "title": "UX/UI",
+      "description": "Revive your company goals. We concrete your ideas with successful designs."
+    }
+  },
+  "banner": {
+    "label": {
+      "title": "To have successful projects is essential: ",
+      "description": "Talent, transparent communication, continuous feedback, and great team culture."
+    },
+    "bold": "This is HopperHock.",
+    "button": "LET'S TALK !"
+  },
+  "techstack": {
+    "title": "Some of Our ",
+    "upper": "technology stack"
+  }
+}
